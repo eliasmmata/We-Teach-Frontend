@@ -23,18 +23,18 @@ export default function Home({ books }) {
           Agrega tus Libros de Programación Favoritos
         </p>
 
-       {/*  <div className={styles.grid}>
-        {books.map(book => (
-          <div key={book.ISBN} className={styles.card}>
-            <h2>{book.title}</h2>
-            <ul>
-              {book.authors.map(author =>  (
-                <li key={author}>{author}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-        </div> */}
+        <div className={styles.grid}>
+          {books.map(book => (
+            <div key={book.ISBN} className={styles.card}>
+              <h2>{book.title}</h2>
+              <ul>
+                {book.authors.map(author => (
+                  <li key={author}>{author}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </main>
 
       <footer className={styles.footer}>
@@ -53,7 +53,7 @@ export default function Home({ books }) {
   );
 }
 
-/* export async function getStaticProps() {
+export async function getStaticProps() {
   const API_URL = process.env.API_URL || 'http://localhost:3000'
   const res = await fetch(`${API_URL}/api/books`);
   const books = await res.json();
@@ -64,4 +64,4 @@ export default function Home({ books }) {
     },
     revalidate: 1,
   }
-} */
+}
