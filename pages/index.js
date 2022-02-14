@@ -52,7 +52,7 @@ export default function Home({ books }) {
     </div>
   );
 }
-
+/*
 export async function getStaticProps() {
   const API_URL = process.env.API_URL || 'http://localhost:3000'
   const res = await fetch(`${API_URL}/api/books`);
@@ -64,4 +64,4 @@ export async function getStaticProps() {
     },
     revalidate: 1,
   }
-}
+} */
