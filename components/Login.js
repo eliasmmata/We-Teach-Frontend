@@ -13,7 +13,7 @@ export function Login() {
   return (
     <>
       Inicia sesión <br />
-      <button onClick={() => signIn()}>Login</button>
+      <button onClick={() => signIn('github')}>Login</button>
     </>
   )
 }
