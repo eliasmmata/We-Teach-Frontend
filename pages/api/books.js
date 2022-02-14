@@ -43,5 +43,6 @@ export default function handler(req, res) {
 }
 
 function getAllBooks(req, res) {
-  res.status(200).json(data);
+  // res.status(200).json(data);
+  res.status(200).json(JSON.stringify(data))
 }
