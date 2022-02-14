@@ -58,6 +58,7 @@ export default function Home({ books }) {
 
 export async function getStaticProps() {
   const API_URL = process.env.API_URL || 'http://localhost:3000'
+  let books = [];
   let error = "";
   try {
     const res = await fetch(
@@ -73,7 +74,7 @@ export async function getStaticProps() {
       }
     );
 
-    const books = await res.json();
+    books = await res.json();
   } catch (e) {
     error = e.toString();
   }
