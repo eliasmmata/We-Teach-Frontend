@@ -62,6 +62,6 @@ export async function getStaticProps() {
     props: {
       books,
     },
-    revalidate: 1,
+    revalidate: 10,
   }
 }
