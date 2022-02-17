@@ -1,6 +1,7 @@
 import { Container } from "../components/Container"
 import { useSession, signIn, signOut } from "next-auth/react"
 import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function Profile() {
     const { data: session } = useSession();
