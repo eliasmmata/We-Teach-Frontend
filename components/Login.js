@@ -3,25 +3,25 @@ import Link from "next/link"
 
 export function Login() {
   const { data: session } = useSession()
-  if (session) {
+  if (!session) {
     return (
       <>
-        <p>Hola {" "}
+        Inicia sesión <br />
+        <button onClick={() => signIn('github')}>Login</button>
+      </>
+    );
+  }
+  return (
+    <>
+      <p>Hola {" "}
         <Link href="/profile">
           <a>
             {session.user.email}
           </a>
-          </Link>{" "}
-        </p>
-        <br />
-        <button onClick={() => signOut()}>Logout</button>
-      </>
-    )
-  }
-  return (
-    <>
-      Inicia sesión <br />
-      <button onClick={() => signIn('github')}>Login</button>
+        </Link>{" "}
+      </p>
+      <br />
+      <button onClick={() => signOut()}>Logout</button>
     </>
-  )
+  );
 }
