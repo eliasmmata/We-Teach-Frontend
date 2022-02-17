@@ -7,10 +7,10 @@ export default function Profile() {
     console.log(session)
     return (
         <Container>
-            <p>{user.email}</p>
-            <p>{user.name}</p>
+            <p>{session.user.email}</p>
+            <p>{session.user.name}</p>
             <span className={styles.logo}>
-                <Image src={user.image} alt="profile pic" width={72} height={16} />
+                <Image src={session.user.image} alt="profile pic" width={72} height={16} />
             </span>
         </Container>
     )
