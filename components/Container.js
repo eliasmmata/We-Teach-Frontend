@@ -3,7 +3,6 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 
 
-
 export function Container({ children }) {
     return (
         <div className={styles.container}>
