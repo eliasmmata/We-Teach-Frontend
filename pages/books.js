@@ -1,14 +1,11 @@
-import Head from "next/head";
-
 import { Login } from "../components/Login";
 import { Container } from "../components/Container";
 
-export default function Books({ books }) {
+export default function Books() {
   return (
     <>
       <Container>
         <Login />
-
         <p>
           Agrega tus Libros de Programación Favoritos
         </p>
@@ -25,6 +22,7 @@ export default function Books({ books }) {
             </div>
           ))}
         </div>
+
       </Container>
     </>
   );
