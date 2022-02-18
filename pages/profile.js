@@ -16,10 +16,12 @@ export default function Profile() {
     return (
         <Container>
             <p>{session?.user?.name}</p>
-            <span className={styles.logo}>
+            <span className={styles.logo}>xs
                 <Image src={session?.user?.image} alt="profile pic" width={112} height={112} />
             </span>
             <p>{session?.user?.email}</p>
         </Container>
     )
 }
+
+//
