@@ -1,6 +1,6 @@
 import { Container } from "../components/Container";
 
-export default function Books({ books }) {
+export default function Books(/* { books } */) {
   return (
     <>
       <Container>
@@ -8,7 +8,7 @@ export default function Books({ books }) {
           Agrega tus Libros de Programación Favoritos
         </p>
 
-        <div>
+        {/* <div>
           {books.map(book => (
             <div key={book.ISBN}>
               <h2>{book.title}</h2>
@@ -19,21 +19,21 @@ export default function Books({ books }) {
               </ul>
             </div>
           ))}
-        </div>
+        </div> */}
 
       </Container>
     </>
   );
 }
 
-export async function getStaticProps() {
+/* export async function getStaticProps() {
   const API_URL = process.env.API_URL || 'http://localhost:3000'
   var res = await fetch(
     `${API_URL}/api/books`,
     {
       method: "GET",
       headers: {
-        Accept: 'application/json, text/plain, */*',
+        Accept: 'application/json',
         'User-Agent': '*',
       },
     }
@@ -49,4 +49,4 @@ export async function getStaticProps() {
   }
 }
 
-// test t
+ */
