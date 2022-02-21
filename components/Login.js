@@ -61,19 +61,15 @@ export function Login() {
           </div>
         </div>
       </>
-    );
+    )
   }
   return (
     <>
-      <p>Hola {" "}
-        <Link href="/profile">
-          <a>
-            {session.user.email}
-          </a>
-        </Link>{" "}
-      </p>
-      <br />
-      <button onClick={() => signOut()}>Logout</button>
+      <p>Signed in as {session.user.email}</p>
+      <Image></Image>
+      <br/>
+      <button onClick={() => signOut()}>Sign out</button>
     </>
-  );
+  )
+
 }

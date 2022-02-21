@@ -7,9 +7,6 @@ import EmailProvider from "next-auth/providers/email";
 import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import prisma from "./lib/prisma";
-
 export default NextAuth({
   adapter: MongoDBAdapter(clientPromise),
   providers: [
