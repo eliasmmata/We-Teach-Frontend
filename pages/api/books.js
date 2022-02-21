@@ -36,12 +36,12 @@ const data = [
   },
 ];
 
-export default function handler(req, res) {
+export default async function Handler(req, res) {
+  function getAllBooks(req, res) {
+    res.status(200).json(data);
+  }
   if (req.method === "GET") {
     getAllBooks(req, res);
   }
 }
 
-function getAllBooks(req, res) {
-  res.status(200).json(data);
-}
