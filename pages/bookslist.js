@@ -1,7 +1,7 @@
 import { Login } from "../components/Login";
 import { Container } from "../components/Container";
 // test
-export default function Books() {
+export default function BooksList() {
   return (
     <>
       <Container>
