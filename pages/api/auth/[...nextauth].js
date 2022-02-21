@@ -3,8 +3,9 @@ import NextAuth from "next-auth";
 /* import { MongoDBAdapter } from "@next-auth/mongodb-adapter"
 import clientPromise from "./lib/mongodb"; */
 
-import EmailProvider from "next-auth/providers/email";
-import GitHubProvider from "next-auth/providers/github";
+/* import EmailProvider from "next-auth/providers/email";
+
+ */import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 
@@ -74,7 +75,7 @@ export default NextAuth({
     error: '/auth/error',
   },
   secret: "secret",
-  /* database: process.env.MONGODB_URI, */
+  database: process.env.MONGODB_URI,
 });
 
 const signInUser = async ({password, user}) => {
