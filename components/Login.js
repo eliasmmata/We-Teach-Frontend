@@ -51,13 +51,13 @@ export function Login() {
                   Inicia Sesión
                 </button>
               </div>
-              <div className="col-xs-12 center-xs">
-                <button onClick={() => signIn('github')} className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-github" style={{ 'fontSize': '2em' }}></i>Log in with GitHub</button>
-              </div>
-              <div className="col-xs-12 center-xs">
-                <button onClick={() => signIn('google')} className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-google" style={{ 'fontSize': '2em' }}></i>Log in with Google</button>
-              </div>
             </form>
+            <div className="col-xs-12 center-xs">
+              <button onClick={() => signIn('github')} className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-github" style={{ 'fontSize': '2em' }}></i>Log in with GitHub</button>
+            </div>
+            <div className="col-xs-12 center-xs">
+              <button onClick={() => signIn('google')} className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-google" style={{ 'fontSize': '2em' }}></i>Log in with Google</button>
+            </div>
           </div>
         </div>
       </>

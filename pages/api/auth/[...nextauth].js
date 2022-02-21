@@ -26,7 +26,7 @@ export default NextAuth({
   jwt: {
     encryption: true,
   },
-  secret: process.env.GITHUB_CLIENT_SECRET,
+  secret: process.env.SECRET,
   adapter: PrismaAdapter(prisma),
   callbacks: {
     async jwt(token, account) {
