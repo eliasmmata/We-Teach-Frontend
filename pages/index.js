@@ -1,7 +1,7 @@
 import { Login } from "../components/Login";
 import { Container } from "../components/Container";
 
-export default function Home({ books }) {
+export default function Home() {
   return (
     <>
       <Container>
