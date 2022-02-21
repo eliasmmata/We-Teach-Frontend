@@ -28,17 +28,19 @@ export default function Books({ books }) {
 
 export async function getStaticProps() {
   const API_URL = process.env.API_URL || 'http://localhost:3000'
-  const res = await fetch(
+  var res = await fetch(
     `${API_URL}/api/books`,
     {
       method: "GET",
       headers: {
+        Accept: 'application/json, text/plain, */*',
         'User-Agent': '*',
-        'Accept': "application/json; charset=UTF-8",
       },
     }
   );
+  var res = JSON.stringify(res.data);
   const books = await res.json();
+  console.log('res ', res);
 
   return {
     props: {
