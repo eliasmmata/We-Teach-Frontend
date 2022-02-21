@@ -10,7 +10,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 
 import bcrypt from 'bcrypt';
 import connectDB from "./lib/connectDB";
-import Users from '../../models/userModel';
+import Users from '../../../models/userModel';
 
 
 connectDB();
