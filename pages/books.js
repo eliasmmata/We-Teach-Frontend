@@ -28,7 +28,7 @@ export default function Books({ books }) {
 
 export async function getStaticProps() {
   const API_URL = process.env.API_URL || 'http://localhost:3000'
-  const res = await fetch(
+  var res = await fetch(
     `${API_URL}/api/books`,
     {
       method: "GET",
@@ -38,7 +38,8 @@ export async function getStaticProps() {
       },
     }
   );
-  const books = await res.json();
+  const books = await res.json(JSON.stringify())
+  console.log('res ', res);
 
   return {
     props: {
@@ -47,3 +48,4 @@ export async function getStaticProps() {
     revalidate: 10,
   }
 }
+
