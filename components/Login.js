@@ -65,8 +65,9 @@ export function Login() {
   }
   return (
     <>
-      <p>Signed in as {session.user.email}</p>
-      <Image></Image>
+      <p>Signed in as</p>
+      <p>{session.user.email}</p>
+      <Image src={session?.user?.image} alt="profile image" width={50} height={50} ></Image>
       <br/>
       <button onClick={() => signOut()}>Sign out</button>
     </>
