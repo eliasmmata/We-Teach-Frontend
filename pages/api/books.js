@@ -36,7 +36,7 @@ const data = [
   },
 ];
 
-export default function Handler(req, res) {
+/* export default function Handler(req, res) {
   if (req.method === "GET") {
     getAllBooks(req, res);
   }
@@ -44,4 +44,4 @@ export default function Handler(req, res) {
 
 function getAllBooks(req, res) {
   res.status(200).json(JSON.stringify(data))
-}
+} */
