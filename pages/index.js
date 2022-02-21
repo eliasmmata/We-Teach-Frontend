@@ -1,13 +1,19 @@
-import { Login } from "../components/Login";
-import { Container } from "../components/Container";
+import { useSession, signIn, signOut } from "next-auth/react"
 
-export default function Home() {
+export default function Component() {
+  const { data: session } = useSession()
+  if (session) {
+    return (
+      <>
+        Signed in as {session.user.email} <br />
+        <button onClick={() => signOut()}>Sign out</button>
+      </>
+    )
+  }
   return (
     <>
-      <Container>
-        <h3>We Teach Frontend </h3>
-        <Login />
-      </Container>
+      Not signed in <br />
+      <button onClick={() => signIn()}>Sign in</button>
     </>
-  );
+  )
 }
