@@ -17,7 +17,7 @@ export function Login() {
                 <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500"> start your 14-day free trial </a>
               </p> */}
             </div>
-            <form className="mt-8 space-y-6" action="#" method="POST">
+            <form className="mt-8 space-y-6" method="POST" action="/api/auth/signin/email">
               <input type="hidden" name="remember" value="true" />
               <div className="rounded-md shadow-sm -space-y-px">
                 <div>

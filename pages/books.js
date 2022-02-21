@@ -1,11 +1,9 @@
-import { Login } from "../components/Login";
 import { Container } from "../components/Container";
-// test
+
 export default function Books({ books }) {
   return (
     <>
       <Container>
-        <Login />
         <p>
           Agrega tus Libros de Programación Favoritos
         </p>
