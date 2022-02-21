@@ -34,7 +34,7 @@ export async function getStaticProps() {
       method: "GET",
       headers: {
         'User-Agent': '*',
-        Accept: "application/json; charset=UTF-8",
+        /* Accept: "application/json; charset=UTF-8", */
       },
     }
   );
