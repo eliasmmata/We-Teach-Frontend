@@ -47,7 +47,7 @@ export function Login({ csrfToken }) {
   if (!session) {
     return (
       <>
-        <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data, {RETURN_TRUSTED_TYPE: true})}}>
+        <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-md w-full space-y-8">
             <div>
 
