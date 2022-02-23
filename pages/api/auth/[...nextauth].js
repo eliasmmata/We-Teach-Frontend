@@ -71,11 +71,11 @@ export default NextAuth({
   ],
   callbacks: {
     async redirect(url, baseUrl) {
-      return "/home";
+      return "/";
     },
   },
   pages: {
-    /* signIn: "/", */
+    signIn: "/",
     error: '/auth/error',
   },
   secret: "secret",
