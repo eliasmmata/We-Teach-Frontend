@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Custom404() {
     return (
         <>
-            <div
+            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data, {RETURN_TRUSTED_TYPE: true})}}
                 className="
     flex
     items-center
