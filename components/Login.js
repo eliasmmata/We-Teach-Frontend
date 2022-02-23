@@ -3,6 +3,7 @@ import Image from "next/image";
 import Router from "next/router";
 import { useState } from "react";
 
+
 export function Login({ csrfToken }) {
   const { data: session } = useSession()
   const [email, setEmail] = useState('')
@@ -100,11 +101,9 @@ export function Login({ csrfToken }) {
                 </button>
               </div>
             </form>
-            <div className="col-xs-12 center-xs">
-              <button onClick={() => signIn('github')} className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-github" style={{ 'fontSize': '2em' }}></i>Log in with GitHub</button>
-            </div>
-            <div className="col-xs-12 center-xs">
-              <button onClick={() => signIn('google')} className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-google" style={{ 'fontSize': '2em' }}></i>Log in with Google</button>
+            <div className="col-xs-12 center-xs d-flex justify-content-between">
+              <button onClick={() => signIn('github')} id="github-btn" className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-github" style={{ 'fontSize': '1em', marginRight: `5px` }}></i>Log in with GitHub</button>
+              <button onClick={() => signIn('google')} id="google-btn" className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-google" style={{ 'fontSize': '1em', marginRight: `5px` }}></i>Log in with Google</button>
             </div>
           </div>
         </div>
