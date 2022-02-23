@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Custom404() {
     return (
         <>
@@ -24,12 +26,9 @@ export default function Custom404() {
                         <p className="mb-8 text-center text-gray-500 md:text-lg">
                             The page you are looking for does not exist.
                         </p>
-
-                        <a
-                            href="#"
-                            className="px-6 py-2 text-sm font-semibold text-blue-800 bg-blue-100"
-                        >Go home</a
-                        >
+                        <Link href="/" className="px-6 py-2 text-sm font-semibold text-blue-800 bg-blue-100">
+                            Go home
+                        </Link>
                     </div>
                 </div>
             </div>
