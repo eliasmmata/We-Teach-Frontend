@@ -30,6 +30,10 @@ export default NextAuth({
       },
       from: process.env.EMAIL_FROM
     }), */
+    GitHubProvider({
+      clientId: process.env.GITHUB_CLIENT_ID,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET,
+    }),
     CredentialsProvider({
       // The name to display on the sign in form (e.g. "Sign in with...")
       name: "Credentials",
@@ -54,10 +58,6 @@ export default NextAuth({
         }
       }
     }),
-    GitHubProvider({
-      clientId: process.env.GITHUB_CLIENT_ID,
-      clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    }),
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET,
@@ -74,7 +74,8 @@ export default NextAuth({
     signIn: "/",
     error: '/auth/error',
   },
-  secret: "secret",
+  /* secret: "secret",
+  secret: process.env.SECRET, */
   database: process.env.MONGODB_URI,
 });
 
