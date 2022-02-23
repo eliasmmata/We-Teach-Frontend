@@ -75,7 +75,7 @@ export default NextAuth({
     },
   },
   pages: {
-    signIn: "/",
+    /* signIn: "/", */
     error: '/auth/error',
   },
   secret: "secret",
