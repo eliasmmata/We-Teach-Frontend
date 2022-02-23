@@ -44,17 +44,17 @@ export default NextAuth({
       credentials: {
         username: { label: "Username", type: "text", placeholder: "jsmith" },
         email: { label: "email", type: "text", placeholder: "email" },
-        password: {  label: "Password", type: "password" }
+        password: { label: "Password", type: "password" }
       },
       async authorize(credentials, req) {
         const email = credentials.email;
         const password = credentials.password;
         const user = await Users.findOne({ email })
-        if(!user) {
+        if (!user) {
           throw new Error('Todavía no te has registrado')
         }
         if (user) {
-          return signInUser({password, user})
+          return signInUser({ password, user })
         }
       }
     }),
@@ -70,6 +70,11 @@ export default NextAuth({
       }
     }),
   ],
+  callbacks: {
+    async redirect(url, baseUrl) {
+      return "/";
+    },
+  },
   pages: {
     /* signIn: "/", */
     error: '/auth/error',
@@ -77,14 +82,15 @@ export default NextAuth({
   secret: "secret",
   /* secret: process.env.SECRET, */
   database: process.env.MONGODB_URI,
+
 });
 
-const signInUser = async ({password, user}) => {
-  if(!user.password) {
+const signInUser = async ({ password, user }) => {
+  if (!user.password) {
     throw new Error('Por favor introduce la contraseña')
   }
   const isMatch = await bcrypt.compare(password, user.password);
-  if(!isMatch) {
+  if (!isMatch) {
     throw new Error('contraseña incorrecta')
   }
   return user
