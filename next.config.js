@@ -8,4 +8,5 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   reactStrictMode: true,
+  plugins: ['postcss-import', 'tailwindcss', 'autoprefixer']
 }
