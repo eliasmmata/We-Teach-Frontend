@@ -71,11 +71,11 @@ export default NextAuth({
     }),
   ],
   pages: {
-    signIn: "/",
+    /* signIn: "/", */
     error: '/auth/error',
   },
-  /* secret: "secret",
-  secret: process.env.SECRET, */
+  secret: "secret",
+  /* secret: process.env.SECRET, */
   database: process.env.MONGODB_URI,
 });
 
