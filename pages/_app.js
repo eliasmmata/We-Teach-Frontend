@@ -8,7 +8,7 @@ import '../styles/tailwind.css';
 
 export default function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
-    <SessionProvider session={session} dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data, {RETURN_TRUSTED_TYPE: true})}}>
+    <SessionProvider session={session}>
       <Component {...pageProps} />
     </SessionProvider>
   );

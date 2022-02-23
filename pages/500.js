@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Custom505() {
     return (
         <>
-            <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data, {RETURN_TRUSTED_TYPE: true})}}
+            <div
                 className="
     flex
     items-center
