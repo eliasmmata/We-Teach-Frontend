@@ -23,7 +23,7 @@ UserSchema.pre("save", async function () {
     try {
         const User = this.constructor;
         const userExists = await User.find({
-            userName: this.get("userName"),
+            email: this.get("email"),
         })
             .lean()
             .exec();

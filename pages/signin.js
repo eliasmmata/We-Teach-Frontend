@@ -8,6 +8,7 @@ export default function SignIn({ csrfToken, providers }) {
     const [message, setMessage] = useState(null)
 
     const signInUser = async (e) => {
+        console.log(email,password)
         e.preventDefault();
         let options = {redirect:false, email, password}
         const res = await signIn("credentials", options)
@@ -15,7 +16,7 @@ export default function SignIn({ csrfToken, providers }) {
         if(res?.error) {
             setMessage(res.error)
         }
-        return Router.push("/")
+        // return Router.push("/")
     }
 
     const signUpUser = async (e) => {
@@ -97,6 +98,7 @@ export async function getServerSideProps(context) {
     return {
         props: {
             csrfToken,
+            /* csrfToken: JSON.parse(JSON.stringify(csrfToken)), */
             providers,
         },
     }
