@@ -5,6 +5,23 @@
 
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/MontserratRegular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'MontserratBold';
+    src: url('/fonts/MontserratSemiBold.woff2') format('woff2');
+    font-style: bold;
+    font-display: swap;
+    font-weight: 600;
+  }
+}
+
 ul {
     margin: 0px;
     padding: 0px !important;
@@ -154,14 +171,18 @@ a:hover {
   padding: 25px 0;
   & a {
     text-decoration: none;
-    color: #C5979D;
+    color: #2C365E;
+    font-weight: 600;
     margin-top: -2px;
     &:hover {
       color: #484D6D;
     }
     &:visited {
-      color: #484D6D;
+      color: #2C365E;
     }
+  }
+  & img {
+    filter: invert(15%) sepia(69%) saturate(682%) hue-rotate(194deg) brightness(95%) contrast(86%);
   }
 }
 .copyright-text p {

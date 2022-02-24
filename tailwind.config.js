@@ -6,9 +6,22 @@ module.exports = {
     './node_modules/flowbite/**/*.js.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Montserrat: ['Montserrat, cursive'],
+        MontserratBold: ['MontserratBold, cursive'],
+      },
+    }
+  },
+  variants: {
+    extend: {
+      fontFamily: ['hover', 'focus'],
+    },
   },
   plugins: [
     require('flowbite/plugin')
   ],
+  corePlugins: {
+    fontFamily: true,
+  },
 }

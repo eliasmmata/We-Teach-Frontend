@@ -57,7 +57,7 @@ export function Login({ csrfToken }) {
                 <div className="titleTwo">{state.titleTwo}</div>
                 <div className="titleThree">{state.titleThree}</div>
               </h2> */}
-              <div className="text-center text-4xl font-extrabold text-900" style={{ color: `#2B193D` }}>
+              <div className="text-center text-4xl font-extrabold text-900" style={{ color: `#2B193D`, minHeight: `45px` }}>
                 <Typewriter
                   options={{
                     autoStart: true,
@@ -72,7 +72,7 @@ export function Login({ csrfToken }) {
                   }}
                 />
               </div>
-              <div className="text-center text-3xl font-extrabold text-900 mt-4" style={{ color: `#C5979D` }}>
+              <div className="text-center text-3xl font-extrabold text-900 mt-4" style={{ color: `#C5979D`, minHeight: `45px` }}>
                 <Typewriter
                   options={{
                     autoStart: true,
@@ -169,9 +169,13 @@ export function Login({ csrfToken }) {
                     href="https://eliasmmataportfolio.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="font-MontserratBold"
                   >
                     Eliasmmata
                   </a>
+                  <svg style={{ color: `#2C365E`, marginTop: `-3px` }} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clipRule="evenodd" />
+                  </svg>
                 </div>
               </div>
             </div>
