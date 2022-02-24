@@ -36,7 +36,7 @@ export function Nav() {
                             id="dropdown"
                             style={{ transform: `translate(-40%, 60%)` }}>
                             <div className="py-3 px-4">
-                                <span className="block text-sm text-gray-900 dark:text-white">Welcome</span>
+                                <span className="block text-sm text-gray-900 dark:text-white">{session.user.name || 'Welcome'}</span>
                                 {session && <span className="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">{session.user.email}</span>}
                             </div>
                             <ul className="py-1" aria-labelledby="dropdown" style={{ padding: `0.5rem` }}>
