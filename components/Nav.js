@@ -9,6 +9,7 @@ export function Nav() {
     const toggleOpen = () => {
         setDropdown(!dropdown);
         setDropdownMenu(false);
+        console.log(session)
     }
     const toggleOpenMenu = () => {
         setDropdownMenu(!dropdownMenu);

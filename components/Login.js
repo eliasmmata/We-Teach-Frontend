@@ -113,7 +113,7 @@ export function Login({ csrfToken }) {
   }
   return (
     <>
-      <Nav session={session}/>
+      <Nav/>
     </>
   )
 }
