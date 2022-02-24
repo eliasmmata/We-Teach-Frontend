@@ -1,15 +1,28 @@
 #github-btn {
-    border: 1px solid black;
     width: 100%;
     margin-bottom: 1rem;
+    background: #2F3337;
+    border: 1px solid #2F3337;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #google-btn {
-    border: 1px solid black;
     width: 100%;
     margin-bottom: 1rem;
+    border: 1px solid #D6D9DC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media (max-width: 1920px) {
     #google-btn {
         width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .Typewriter {
+       font-size: 2rem;
     }
 }

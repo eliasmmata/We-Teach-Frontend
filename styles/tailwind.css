@@ -149,6 +149,21 @@ a:hover {
   background: #202020;
   padding: 25px 0;
 }
+.copyright-area-login{
+  background: #fff;
+  padding: 25px 0;
+  & a {
+    text-decoration: none;
+    color: #C5979D;
+    margin-top: -2px;
+    &:hover {
+      color: #484D6D;
+    }
+    &:visited {
+      color: #484D6D;
+    }
+  }
+}
 .copyright-text p {
   margin: 0;
   font-size: 14px;
@@ -169,9 +184,44 @@ a:hover {
   color: #878787;
 }
 
+/* dropdown (usado en el nav) */
 .dropdown-menu.show {
   transform: translate(0%, 60%);
   width: 100%;
   position: absolute;
   left: 0;
 }
+
+ /* FORM CONSENT STYLES */
+ .cookies-text-container {
+  background: #2B193D !important;
+  padding-bottom: 1rem !important;
+  & .cookies-btn-container {
+    margin: 0 auto !important;
+    width: 100%;
+    padding: 0 2rem;
+    & #rcc-confirm-button {
+      background: #4B8F8C !important;
+      padding: 0.5rem 1rem !important;
+      margin-bottom: 0.5rem !important;
+      border-radius: 50px !important;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    & #rcc-decline-button {
+      text-decoration: underline;
+      padding: 0.5rem !important;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+}
+@media (min-width: 600px) {
+  .cookies-btn-container {
+    width: initial !important;
+    align-self: center;
+  }
+}
+/* END FORM CONSENT STYLES */
