@@ -1,6 +1,15 @@
-#google-btn {
-    border: 1px solid black;
-}
 #github-btn {
     border: 1px solid black;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#google-btn {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+@media (max-width: 1920px) {
+    #google-btn {
+        width: 100%;
+    }
 }

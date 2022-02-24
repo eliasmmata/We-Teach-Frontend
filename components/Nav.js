@@ -1,6 +1,6 @@
-import { useSession, signIn, signOut, getCsrfToken } from "next-auth/react"
+import { useSession, signOut, signIn, getCsrfToken } from "next-auth/react"
 import Image from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 export function Nav() {
     const { data: session } = useSession()

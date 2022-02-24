@@ -2,6 +2,7 @@ import { useSession, signIn, signOut, getCsrfToken } from "next-auth/react"
 import Image from "next/image";
 import Router from "next/router";
 import { useState } from "react";
+import { Footer } from "./Footer";
 import { Nav } from "./Nav";
 
 
@@ -48,11 +49,11 @@ export function Login({ csrfToken }) {
   if (!session) {
     return (
       <>
-        <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8" style={{minHeight:`92vh`}}>
           <div className="max-w-md w-full space-y-8">
             <div>
-
-              <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Crea tu cuenta</h2>
+              <h2 className="text-center text-5xl font-extrabold text-gray-900">We Teach Frontend</h2>
+              <h3 className="mt-4 text-center text-3xl font-bold text-gray-600">Crea tu cuenta</h3>
               {/* <p className="mt-2 text-center text-sm text-gray-600">
                 Or
                 <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500"> start your 14-day free trial </a>
@@ -102,18 +103,42 @@ export function Login({ csrfToken }) {
                 </button>
               </div>
             </form>
-            <div className="col-xs-12 center-xs d-flex justify-content-between">
-              <button onClick={() => signIn('github')} id="github-btn" className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-github" style={{ 'fontSize': '1em', marginRight: `5px` }}></i>Log in with GitHub</button>
-              <button onClick={() => signIn('google')} id="google-btn" className="btn btn-default btn-raised btn-lg p-left-xs-40 p-right-xs-40"><i className="pi pi-google" style={{ 'fontSize': '1em', marginRight: `5px` }}></i>Log in with Google</button>
+            <div className="col-xs-12 center-xs .d-xl-flex d-sm-flex justify-content-between" style={{gap: `1rem`}}>
+              <button onClick={() => signIn('github')} id="github-btn" className="btn btn-default btn-raised s-btn-sm p-left-xs-40 p-right-xs-40"><i className="pi pi-github" style={{ 'fontSize': '1em', marginRight: `5px` }}></i>Log in with GitHub</button>
+              <button onClick={() => signIn('google')} id="google-btn" className="btn btn-default btn-raised s-btn-sm p-left-xs-40 p-right-xs-40"><i className="pi pi-google" style={{ 'fontSize': '1em', marginRight: `5px` }}></i>Log in with Google</button>
             </div>
           </div>
         </div>
+        <footer className="copyright-area" style={{width:`100%`, position:`absolute`, bottom:`0`}}>
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-12 col-lg-12 text-center text-lg-left">
+                <div className="copyright-text">
+
+                  <a
+                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Powered by{" "}
+                    <span>
+                      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                    </span>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </footer>
       </>
     )
   }
   return (
     <>
-      <Nav/>
+      <Nav />
+      <Footer />
     </>
   )
 }
