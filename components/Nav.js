@@ -10,6 +10,8 @@ export function Nav() {
         setDropdown(!dropdown);
         setDropdownMenu(false);
         console.log(session)
+        console.log(session.user.email)
+        console.log(user.email)
     }
     const toggleOpenMenu = () => {
         setDropdownMenu(!dropdownMenu);
