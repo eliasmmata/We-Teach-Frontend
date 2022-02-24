@@ -30,11 +30,11 @@ export function Nav() {
                             {session ? <Image className="w-8 h-8 rounded-full" src={session.user.image || 'https://i.stack.imgur.com/34AD2.jpg'} alt="profile image" width={50} height={50} />
                                 : <Image className="w-8 h-8 rounded-full" src={'https://i.stack.imgur.com/34AD2.jpg'} alt="profile image" width={30} height={30} />}
                         </button>
-                        {/* Dropdown menu  */}
-                        <div className={`dropdown-menu hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 ${dropdown ? 'show hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600' : ''}`}
+                        {/* Dropdown menu profile pic */}
+                        <div className={`container dropdown-menu hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 ${dropdown ? 'show hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600' : ''}`}
                             aria-labelledby="dropdownMenuButton"
                             id="dropdown"
-                            style={{ transform: `translate(-40%, 60%)` }}>
+                            style={{width: `50%`, left:`50%` }}>
                             <div className="py-3 px-4">
                                 {session?.user?.name && <span className="block text-sm text-gray-900 dark:text-white">{session.user.name}</span>}
                                 {session && <span className="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">{session.user.email}</span>}
@@ -62,13 +62,12 @@ export function Nav() {
                     </div>
                     {/* Dropdown menu burger button mobile  */}
                     <div
-                        className={`dropdown-menu hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 ${dropdownMenu ? 'show hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600' : ''}`}
+                        className={`hidden justify-between items-center w-full md:flex md:w-auto md:order-1 ${dropdownMenu ? 'dropdown-menu show hidden justify-between items-center w-full md:flex md:w-auto md:order-1' : ''}`}
                         /* id="mobile-menu-2" */
                         aria-labelledby="dropdownMenuButton"
                         id="dropdownMenu"
-                        style={{ transform: `translate(0%, 60%)`, width: `90%` }}
                     >
-                        <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium" style={{ padding: `0.5rem` }}>
+                        <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                             <li>
                                 <a href="#" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
                             </li>

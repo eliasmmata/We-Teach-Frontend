@@ -7,7 +7,7 @@
 
 ul {
     margin: 0px;
-    padding: 0px;
+    padding: 0px !important;
 }
 a:hover {
   cursor:pointer;
@@ -167,4 +167,11 @@ a:hover {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+
+.dropdown-menu.show {
+  transform: translate(0%, 60%);
+  width: 100%;
+  position: absolute;
+  left: 0;
 }
