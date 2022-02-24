@@ -10,8 +10,6 @@ export function Nav() {
         setDropdown(!dropdown);
         setDropdownMenu(false);
         console.log(session)
-        console.log(session.user.email)
-        console.log(user.email)
     }
     const toggleOpenMenu = () => {
         setDropdownMenu(!dropdownMenu);
@@ -39,7 +37,7 @@ export function Nav() {
                             style={{ transform: `translate(-40%, 60%)` }}>
                             <div className="py-3 px-4">
                                 <span className="block text-sm text-gray-900 dark:text-white">Welcome</span>
-                                {session && <span className="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">session.user.email</span>}
+                                {session && <span className="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">{session.user.email}</span>}
                             </div>
                             <ul className="py-1" aria-labelledby="dropdown" style={{ padding: `0.5rem` }}>
                                 <li>
