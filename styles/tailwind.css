@@ -9,6 +9,9 @@ ul {
     margin: 0px;
     padding: 0px;
 }
+a:hover {
+  cursor:pointer;
+}
 .footer-section {
   background: #151414;
   position: relative;

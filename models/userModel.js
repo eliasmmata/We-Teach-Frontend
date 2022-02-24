@@ -37,5 +37,5 @@ UserSchema.pre("save", async function () {
     }
 });
 
-let Dataset = mongoose.model.users || mongoose.model('users', UserSchema)
-export default Dataset
+let Users = mongoose.model.users || mongoose.model('users', UserSchema)
+export default Users
