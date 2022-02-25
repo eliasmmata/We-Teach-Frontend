@@ -11,7 +11,14 @@ module.exports = {
         Montserrat: ['Montserrat, cursive'],
         MontserratBold: ['MontserratBold, cursive'],
       },
-    }
+      colors: {
+        'darkpurple': '#2B193D',
+        'spacecadet': '#2C365E',
+        'independence': '#484D6D',
+        'wintergreen': '#4B8F8C',
+        'tuscany': '#C5979D',
+      }
+    },
   },
   variants: {
     extend: {

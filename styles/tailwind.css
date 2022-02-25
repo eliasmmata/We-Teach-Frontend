@@ -191,15 +191,15 @@ a:hover {
       color: #9EA8D1;
       cursor: pointer;
     }
-    &:hover + .copyright-area-login a {
-      color: #9EA8D1;
-    }
   }
 }
-#click:hover + #name {
+#click:hover + #elias {
+  color: #9EA8D1;
+
+}
+#elias:hover + #click {
   color: #9EA8D1;
 }
-
 .copyright-text p {
   margin: 0;
   font-size: 14px;

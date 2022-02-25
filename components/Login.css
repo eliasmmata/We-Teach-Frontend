@@ -16,8 +16,11 @@
     align-items: center;
     justify-content: center;
 }
-.Typewriter__cursor {
-    display: none;
+.typewriter-cursor-1 {
+    display: none !important;
+}
+.typewriter-cursor-2 {
+    color: #A7626B;
 }
 @media (max-width: 1920px) {
     #google-btn {
