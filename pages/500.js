@@ -1,9 +1,10 @@
 // pages/500.js
 import Link from "next/link";
+import { Container } from "../components/Container";
 
 export default function Custom505() {
     return (
-        <>
+        <Container>
             <div
                 className="
     flex
@@ -32,6 +33,6 @@ export default function Custom505() {
                     </div>
                 </div>
             </div>
-        </>
+        </Container>
     )
 }

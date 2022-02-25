@@ -172,19 +172,34 @@ a:hover {
   & a {
     text-decoration: none;
     color: #2C365E;
-    font-weight: 600;
-    margin-top: -2px;
+    margin-top: -3px;
+    letter-spacing: -0.5px;
     &:hover {
-      color: #484D6D;
+      color: #9EA8D1;
     }
     &:visited {
-      color: #2C365E;
+      color: none;
     }
   }
   & img {
     filter: invert(15%) sepia(69%) saturate(682%) hue-rotate(194deg) brightness(95%) contrast(86%);
   }
+  & .mouse {
+    color: #2C365E;
+    margin-top: -3px;
+    &:hover {
+      color: #9EA8D1;
+      cursor: pointer;
+    }
+    &:hover + .copyright-area-login a {
+      color: #9EA8D1;
+    }
+  }
 }
+#click:hover + #name {
+  color: #9EA8D1;
+}
+
 .copyright-text p {
   margin: 0;
   font-size: 14px;
