@@ -34,7 +34,7 @@ export function Footer() {
                                     <i className="fas fa-phone"></i>
                                     <div className="cta-text">
                                         <h4 className="font-MontserratBold">LLámanos</h4>
-                                        <span>674547596</span>
+                                        <a href="tel:+34674547596">674547596</a>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ export function Footer() {
                                     <i className="far fa-envelope-open"></i>
                                     <div className="cta-text">
                                         <h4 className="font-MontserratBold">Escríbenos</h4>
-                                        <span>eliasmmata@hotmail.com</span>
+                                        <a target="_blank" rel="noreferrer"  href="mailto:eliasmmata@hotmail.com?Subject=Contacta%20con%20Phil%20WTF">eliasmmata@hotmail.com</a>
                                     </div>
                                 </div>
                             </div>

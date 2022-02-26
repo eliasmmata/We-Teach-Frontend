@@ -30,7 +30,7 @@ export function Nav() {
                         <button onClick={toggleOpen} type="button" className="flex mr-3 text-sm bg-independence rounded-full md:mr-0 focus:ring-2 focus:ring-ring-inset dark:focus:ring-ring-inset" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
                             <span className="sr-only">Open user menu</span>
                             {session ? <Image className="w-8 h-8 rounded-full" src={session.user.image || 'https://i.stack.imgur.com/34AD2.jpg'} alt="profile image" width={50} height={50} />
-                                : <Image className="w-8 h-8 rounded-full" src={'https://i.stack.imgur.com/34AD2.jpg'} alt="profile image" width={30} height={30} />}
+                                : <Image id="default-pic" className="w-8 h-8 rounded-full" src={'https://i.stack.imgur.com/34AD2.jpg'} alt="profile image" width={30} height={30} />}
                         </button>
                         {/* Dropdown menu profile pic */}
                         <div className={`container dropdown-menu hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 ${dropdown ? 'show hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600' : ''}`}
@@ -70,7 +70,6 @@ export function Nav() {
                         id="dropdownMenu"
                     >
                         <ul className="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium sm:font-Montserrat md:font-MontserratBold uppercase">
-
                             <li>
                                 <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b rounded-t border-white">Home</a>
                             </li>
@@ -87,8 +86,6 @@ export function Nav() {
                     </div>
                 </div>
             </nav>
-
         </>
     )
-
 }
