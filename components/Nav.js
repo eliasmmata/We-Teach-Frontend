@@ -69,7 +69,7 @@ export function Nav() {
                         aria-labelledby="dropdownMenuButton"
                         id="dropdownMenu"
                     >
-                        <ul className="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium sm:font-Montserrat md:font-MontserratBold">
+                        <ul className="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium sm:font-Montserrat md:font-MontserratBold uppercase">
 
                             <li>
                                 <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b rounded-t border-white">Home</a>
