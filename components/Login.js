@@ -40,7 +40,7 @@ export function Login({ csrfToken }) {
     if (data.message) {
       setMessage(data.message)
     }
-    if (data.message == "Registered succesfully") {
+    if (data.message == "Registrado satisfactoriamente") {
       let options = { redirect: false, email, password }
       const res = await signIn("credentials", options)
       return Router.push("/")
@@ -87,11 +87,9 @@ export function Login({ csrfToken }) {
                   }}
                 />
               </div>
-              <h3 className="mt-4 text-center text-3xl font-bold text-600" style={{ color: `#2B193D` }}>Crea tu cuenta</h3>
-              {/* <p className="mt-2 text-center text-sm text-gray-600">
-                Or
-                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500"> start your 14-day free trial </a>
-              </p> */}
+              <h3 className="mt-3 text-center text-3xl font-bold text-600" style={{ color: `#2B193D` }}>Crea tu cuenta</h3>
+              <p className="mt-2 text-center text-sm text-spacecadet">
+                ( O inicia sesión si ya estás registrado ) </p>
             </div>
             <form className="mt-8 space-y-6" method="post" action="/api/auth/signin/email">
               <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
@@ -104,17 +102,20 @@ export function Login({ csrfToken }) {
                   <label htmlFor="password" className="sr-only">Contraseña</label>
                   <input onChange={e => setPassword(e.target.value)} value={password} id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
                 </div>
-                <p style={{ color: `red` }}>{message}</p>
+                {userExist
+                ? <p className="font-MontserratBold" style={{ color: `red`, padding: `5px 0 5px 1rem` }}>{message}</p>
+                : <p className="font-MontserratBold" style={{ color: `#4B8F8C`, padding: `5px 0 5px 1rem` }}>{message}</p>
+                }
               </div>
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" />
-                  <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900"> Recuérdame </label>
+                  <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 text-spacecadet focus:ring-spacecadet border-gray-300 rounded" />
+                  <label htmlFor="remember-me" className="ml-2 block text-sm text-darkpurple"> Recuérdame </label>
                 </div>
 
                 <div className="text-sm">
-                  <a href="#" className="font-medium text--600 hover:text-500" style={{ color: `#C5979D` }}> ¿Olvidaste tu contraseña? </a>
+                  <a href="#" className="font-medium text-600 hover:text-500" style={{ color: `#C5979D` }}> ¿Olvidaste tu contraseña? </a>
                 </div>
               </div>
 
