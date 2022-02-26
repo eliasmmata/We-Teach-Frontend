@@ -28,6 +28,7 @@ ul {
 }
 a:hover {
   cursor:pointer;
+  color: inherit;
 }
 .footer-section {
   background: #151414;
@@ -222,7 +223,7 @@ a:hover {
 
 /* dropdown (usado en el nav) */
 .dropdown-menu.show {
-  transform: translate(0%, 60%);
+  transform: translate(0%, 65%);
   width: 100%;
   position: absolute;
   left: 0;

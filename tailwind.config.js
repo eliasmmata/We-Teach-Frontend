@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   content: [
     './pages/**/*.{html,js}',
     './components/**/*.{html,js}',
@@ -17,6 +18,9 @@ module.exports = {
         'independence': '#484D6D',
         'wintergreen': '#4B8F8C',
         'tuscany': '#C5979D',
+        'indigo': {
+          900: '#2B193D',
+        }
       }
     },
   },
