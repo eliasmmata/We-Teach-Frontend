@@ -6,7 +6,6 @@ import { Footer } from "./Footer";
 import { Nav } from "./Nav";
 import Typewriter from 'typewriter-effect';
 
-
 export function Login({ csrfToken }) {
   const { data: session } = useSession()
   const [email, setEmail] = useState('')
@@ -102,9 +101,9 @@ export function Login({ csrfToken }) {
                   <label htmlFor="password" className="sr-only">Contraseña</label>
                   <input onChange={e => setPassword(e.target.value)} value={password} id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
                 </div>
-                {userExist
-                ? <p className="font-MontserratBold" style={{ color: `red`, padding: `5px 0 5px 1rem` }}>{message}</p>
-                : <p className="font-MontserratBold" style={{ color: `#4B8F8C`, padding: `5px 0 5px 1rem` }}>{message}</p>
+                {message == 'Registrado satisfactoriamente'
+                ? <p className="font-MontserratBold" style={{ color: `#4B8F8C`, padding: `5px 0 5px 1rem` }}>{message}</p>
+                : <p className="font-MontserratBold" style={{ color: `red`, padding: `5px 0 5px 1rem` }}>{message}</p>
                 }
               </div>
 
