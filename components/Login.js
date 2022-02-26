@@ -95,16 +95,13 @@ export function Login({ csrfToken }) {
               <div className="rounded-md shadow-sm -space-y-px">
                 <div>
                   <label htmlFor="email-address" className="sr-only">Email</label>
-                  <input onChange={e => setEmail(e.target.value)} value={email} id="email-address" name="email" type="email" autoComplete="email" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address" />
+                  <input onChange={e => setEmail(e.target.value)} value={email} id="email-address" name="email" type="email" autoComplete="email" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-spacecadet focus:border-spacecadet focus:z-10 sm:text-sm" placeholder="Email address" />
                 </div>
                 <div>
                   <label htmlFor="password" className="sr-only">Contraseña</label>
-                  <input onChange={e => setPassword(e.target.value)} value={password} id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
+                  <input onChange={e => setPassword(e.target.value)} value={password} id="password" name="password" type="password" autoComplete="current-password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-spacecadet focus:border-spacecadet focus:z-10 sm:text-sm" placeholder="Password" />
                 </div>
-                {message == 'Registrado satisfactoriamente'
-                ? <p className="font-MontserratBold" style={{ color: `#4B8F8C`, padding: `5px 0 5px 1rem` }}>{message}</p>
-                : <p className="font-MontserratBold" style={{ color: `red`, padding: `5px 0 5px 1rem` }}>{message}</p>
-                }
+                <p className="font-MontserratBold" style={{ color: `red`, paddingLeft: `1rem` }}>{message}</p>
               </div>
 
               <div className="flex items-center justify-between">
