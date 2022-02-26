@@ -14,7 +14,7 @@ export function Footer() {
 
     return (
         <>
-            <footer className="footer-section">
+            <footer className="footer-section font-Montserrat">
                 <div className="container">
                     <div className="footer-cta pt-4 pb-4">
                         <div className="row">
@@ -22,7 +22,7 @@ export function Footer() {
                                 <div className="single-cta">
                                     <i className="fas fa-map-marker-alt"></i>
                                     <div className="cta-text">
-                                        <h4>The Company</h4>
+                                        <h4 className="font-MontserratBold">The Company</h4>
                                         <span>
                                             <a href='https://www.philjackson.es' target="_blank" rel="noreferrer">www.philjackson.es</a>
                                         </span>
@@ -33,7 +33,7 @@ export function Footer() {
                                 <div className="single-cta">
                                     <i className="fas fa-phone"></i>
                                     <div className="cta-text">
-                                        <h4>LLámanos</h4>
+                                        <h4 className="font-MontserratBold">LLámanos</h4>
                                         <span>674547596</span>
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@ export function Footer() {
                                 <div className="single-cta">
                                     <i className="far fa-envelope-open"></i>
                                     <div className="cta-text">
-                                        <h4>Escríbenos</h4>
+                                        <h4 className="font-MontserratBold">Escríbenos</h4>
                                         <span>eliasmmata@hotmail.com</span>
                                     </div>
                                 </div>
@@ -55,13 +55,12 @@ export function Footer() {
                                 <div className="footer-widget" style={{padding:`0 15px`}}>
                                     <div className="footer-logo my-2" >
                                         <Link href="/" passHref ><i className="pi pi-home text-white text-xl"></i></Link>
-                                        <i onClick={scrollToTop} className="pi pi-arrow-up text-white text-xl ml-4" style={{'fontSize': '1em'}}></i>
                                     </div>
                                     <div className="footer-text pt-2 pb-2">
                                         <p>Un espacio ecléctico para aprender Frontend, desarrollo web y las últimas tecnologías. Pero también información sobre la actualidad, música, y aplicaciones interesantes en el mundo del desarrollo</p>
                                     </div>
                                     <div className="footer-social-icon pb-4">
-                                        <span>Sígueme</span>
+                                        <span className='font-MontserratBold'><p>Sígueme</p></span>
                                         <a href="#"><i className="pi pi-github" style={{'fontSize': '1.5em', marginLeft: `-8px`}}></i></a>
                                         <a href="#"><i className="pi pi-linkedin" style={{'fontSize': '1.5em'}}></i></a>
                                         <a href="#"><i className="pi pi-instagram" style={{'fontSize': '1.5em'}}></i></a>
@@ -71,7 +70,7 @@ export function Footer() {
                             <div className="col-xl-4 col-lg-4 col-md-6 my-2">
                                 <div className="footer-widget">
                                     <div className="footer-widget-heading" style={{paddingLeft:`15px`}}>
-                                        <h3>Links Útiles</h3>
+                                        <h3 className="font-MontserratBold">Links Útiles</h3>
                                     </div>
                                     <ul>
                                         <li  style={{paddingLeft:`15px`}}><a href="#">home</a></li>
@@ -90,7 +89,7 @@ export function Footer() {
                             <div className="col-xl-4 col-lg-4 col-md-6 my-2">
                                 <div className="footer-widget">
                                     <div className="footer-widget-heading" style={{paddingLeft:`15px`}}>
-                                        <h3>Trabajos y Proyectos</h3>
+                                        <h3 className="font-MontserratBold">Trabajos y Proyectos</h3>
                                     </div>
                                     <ul style={{paddingLeft:`15px`}}>
                                         <li style={{paddingLeft:`15px`}}><a href="#">Portfolio</a></li>
@@ -117,8 +116,8 @@ export function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-2" style={{textAlign: `center`}}>
-                        <i onClick={scrollToTop} className="pi pi-arrow-up text-white text-xl" style={{'fontSize': '1em', textAlign: `center`, marginLeft: `-3rem`}}></i>
+                    <div className="pt-1 pb-4" style={{textAlign: `center`}}>
+                        <i onClick={scrollToTop} className="pi pi-chevron-up" style={{'fontSize': '1.25em', textAlign: `center`, marginLeft: `-3rem`, cursor: `pointer`, color: `#2B193D`, background: `#E2CBCE`,borderRadius: `50%`,padding: `17px 10px`,lineHeight: `5px`}}></i>
                     </div>
                 </div>
                 <div className="copyright-area" style={{padding: `15px`}}>
