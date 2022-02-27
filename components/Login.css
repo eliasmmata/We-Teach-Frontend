@@ -35,16 +35,29 @@
 
 /* HOME CONTENT CUBE COMPONENT */
 .home-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: 'MontserratBold';
     color: #C5979D;
-    text-shadow: 3px 2px 3px rgba(43, 25, 61,.2);
+    text-shadow: 1px 0px 1px rgba(43, 25, 61, 0.75);
+    margin-top: 1.5rem;
     /* text-transform: uppercase; */
     text-align: center;
 }
+.home-text-smalldevice {
+    color: #2B193D;
+    margin: 0 2rem 3rem 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.home-text-large {
+    color: #2B193D;
+}
 @media (max-width: 600px) {
     .home-title {
-        font-size: 1.25rem;
+        font-size: 2rem;
+        & span {
+            display: block;
+        }
     }
   }
 /* HOME CONTENT TEAM COMPONENT */

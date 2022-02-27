@@ -185,6 +185,11 @@ export default function Topresources() {
                     </div>
                 </section>
             </section>
+            <div className="home-text-large font-Montserrat">
+                <h3 className="">Los mejores recursos para desarrolladores web, especialmente en el campo del Frontend y el diseño. </h3>
+                <h3 className="">No dudes en compartir con nosotros tus recursos favoritos para toda la comunidad.</h3>
+                <h3 className="">Porque el código no lo es todo. Pero casi : )</h3>
+            </div>
         </>
     )
 }

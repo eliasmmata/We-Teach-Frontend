@@ -9,3 +9,12 @@
     position: absolute;
     left: 0;
   }
+
+  #dropdownMenu > ul > li > a {
+      text-shadow: 1px 0px 1px rgba(197, 151, 157, 0.5);
+      &:hover {
+          text-shadow: none;
+          text-shadow: 1px 0px 1px rgba(43, 25, 61, 0.1);
+        color: #484D6D;
+    }
+  }
