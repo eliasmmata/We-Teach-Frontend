@@ -117,7 +117,7 @@ export function Footer() {
                         </div>
                     </div>
                     <div className="pt-1 pb-4" style={{textAlign: `center`}}>
-                        <i onClick={scrollToTop} className="pi pi-chevron-up" style={{'fontSize': '1.25em', textAlign: `center`, marginLeft: `-3rem`, cursor: `pointer`, color: `#2B193D`, background: `#E2CBCE`,borderRadius: `50%`,padding: `17px 10px`,lineHeight: `5px`}}></i>
+                        <i onClick={scrollToTop} className="pi pi-chevron-up" style={{'fontSize': '1.25em', textAlign: `center`, marginLeft: `-3rem`, cursor: `pointer`, color: `#2B193D`, background: `#F8F2F3`,borderRadius: `50%`,padding: `17px 10px`,lineHeight: `5px`}}></i>
                     </div>
                 </div>
                 <div className="copyright-area" style={{padding: `15px`}}>

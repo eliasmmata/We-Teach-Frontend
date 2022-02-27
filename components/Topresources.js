@@ -189,7 +189,7 @@ export default function Topresources() {
                 <h3>Los mejores recursos para Frontend, diseño y más...</h3>
                 <h3 className="mt-3">¡ Comparte tus favoritos !</h3>
                 <a href="#footer">
-                    <i className="pi pi-share-alt my-3" style={{cursor:`pointer`, background: `#2B193D`, color: `#fff`, borderRadius: `50%`, padding: `18px 10px`,paddingRight:`13px` ,lineHeight: `5px`}}></i>
+                    <i className="pi pi-share-alt my-3"></i>
                 </a>
                 <h3 className="mt-2" style={{fontSize:`1rem`}}>Porque el código no lo es todo.<span style={{display:`block`, textAlign:`center`}} className="mt-2">Pero casi : )</span></h3>
             </div>

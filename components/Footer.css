@@ -24,9 +24,11 @@
   .cta-text span, .cta-text a  {
     color: #DABEC2;
     font-size: 15px;
+    transition: 0.2s;
     &:hover {
         color: #DABEC2;
         filter: brightness(125%);
+        transition: 0.2s;
     }
   }
 
@@ -70,8 +72,10 @@
     text-align: center;
     line-height: 38px;
     border-radius: 50%;
+    transition: 0.2s;
     &:hover {
         filter: brightness(125%);
+        transition: 0.2s;
     }
   }
   .footer-widget-heading h3 {
@@ -138,9 +142,11 @@
       & .mouse {
         color: #2B193D;
         margin-top: -3px;
+        transition: 0.2s;
         &:hover {
           color: #484D6D;
           cursor: pointer;
+          transition: 0.2s;
         }
       }
   }
@@ -165,28 +171,34 @@
     & .mouse {
         color: #2B193D;
         margin-top: -3px;
+        transition: 0.2s;
         &:hover {
           color: #484D6D;
           cursor: pointer;
+          transition: 0.2s;
         }
       }
   }
   #click {
       color: #2B193D;
+      transition: 0.2s;
       &:hover {
         color: #484D6D;
+        transition: 0.2s;
       }
   }
   #click:hover + #elias {
     color: #484D6D;
+    transition: 0.2s;
   }
   #elias:hover + #click {
     color: #484D6D;
+    transition: 0.2s;
   }
   .copyright-text p {
     margin: 0;
     font-size: 14px;
-    color: #2B193D;;
+    color: #2B193D;
   }
   /* .copyright-text p a{
     color: #ff5e14;
