@@ -57,7 +57,7 @@ export function Footer() {
                                         <Link href="/" passHref ><i className="pi pi-home text-white text-xl" style={{cursor:"pointer"}}></i></Link>
                                     </div>
                                     <div className="footer-text pt-2 pb-2">
-                                        <p>Un espacio ecléctico para aprender Frontend, desarrollo web y las últimas tecnologías. Pero también información sobre la actualidad, música, y aplicaciones interesantes en el mundo del desarrollo</p>
+                                        <p>Un espacio ecléctico para aprender Frontend, desarrollo web y las últimas tecnologías. Pero también información sobre la actualidad, música, y aplicaciones interesantes en el mundo del desarrollo.</p>
                                     </div>
                                     <div className="footer-social-icon pb-4">
                                         <span className='font-MontserratBold'><p>Sígueme</p></span>

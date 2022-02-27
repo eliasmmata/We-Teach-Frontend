@@ -71,7 +71,7 @@
 @media (max-width: 768px) {
     .home-title {
         font-size: 2rem;
-        margin-top: 0.5rem;
+        margin-top: 1.5rem;
         & span {
             display: block;
         }
