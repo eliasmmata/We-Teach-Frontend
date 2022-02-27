@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Montserrat: ['Montserrat, cursive'],
-        MontserratBold: ['MontserratBold, cursive'],
+        Montserrat: ['Montserrat, mono-sans'],
+        MontserratBold: ['MontserratBold, mono-sans'],
       },
       colors: {
         'darkpurple': '#2B193D',

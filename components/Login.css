@@ -32,3 +32,18 @@
        font-size: 2rem;
     }
 }
+
+/* HOME CONTENT */
+.home-title {
+    font-size: 1.5rem;
+    font-family: 'MontserratBold';
+    color: #C5979D;
+    text-shadow: 3px 2px 3px rgba(43, 25, 61,.2);
+    /* text-transform: uppercase; */
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .home-title {
+        font-size: 1.25rem;
+    }
+  }

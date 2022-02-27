@@ -37,6 +37,10 @@ a:hover {
  .cookies-text-container {
   background: #2B193D !important;
   padding-bottom: 1rem !important;
+  -webkit-animation: fadeInUp;
+  animation: fadeInUp;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   & .cookies-btn-container {
     margin: 0 auto !important;
     width: 100%;
@@ -66,3 +70,4 @@ a:hover {
   }
 }
 /* END FORM CONSENT STYLES */
+
