@@ -1,6 +1,7 @@
-@import "../components/Login.css";
-@import "../components/Footer.css";
 @import "../components/Nav.css";
+@import "../components/Login.css";
+@import "../components/Topresources.css";
+@import "../components/Footer.css";
 @tailwind base;
 
 @tailwind components;

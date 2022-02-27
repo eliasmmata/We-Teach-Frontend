@@ -5,13 +5,14 @@ import Cube from "../components/Cube";
 import { Footer } from "../components/Footer";
 import { Nav } from "../components/Nav";
 import Team from "../components/Team";
+import Topresources from "../components/Topresources";
 
 export default function Profile() {
     return (
         <Container>
             <Nav />
             <Cube/>
-            <h2 className="home-title">Frontend and so much more</h2>
+            <Topresources/>
             <Team/>
             <Footer></Footer>
             <CookieConsent className="d-block"

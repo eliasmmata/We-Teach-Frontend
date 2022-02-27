@@ -6,6 +6,8 @@ import { Footer } from "./Footer";
 import { Nav } from "./Nav";
 import Typewriter from 'typewriter-effect';
 import Cube from "./Cube";
+import Team from "./Team";
+import Topresources from "./Topresources";
 
 export function Login({ csrfToken }) {
   const { data: session } = useSession()
@@ -186,7 +188,10 @@ export function Login({ csrfToken }) {
   return (
     <>
       <Nav />
-      <Cube/>
+      <Cube />
+      <Topresources />
+      <Team />
+      <Team />
       <Footer />
     </>
   )
