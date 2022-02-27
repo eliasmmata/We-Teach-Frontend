@@ -191,7 +191,6 @@ export function Login({ csrfToken }) {
       <Cube />
       <Topresources />
       <Team />
-      <Team />
       <Footer />
     </>
   )
