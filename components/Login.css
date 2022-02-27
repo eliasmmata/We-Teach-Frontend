@@ -47,3 +47,11 @@
         font-size: 1.25rem;
     }
   }
+
+.icon-team {
+    &:hover {
+        background: #F8F2F3;
+        border-radius: 50%;
+        filter: brightness(104%);
+    }
+}

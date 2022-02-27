@@ -4,6 +4,7 @@ import { Container } from "../components/Container"
 import Cube from "../components/Cube";
 import { Footer } from "../components/Footer";
 import { Nav } from "../components/Nav";
+import Team from "../components/Team";
 
 export default function Profile() {
     return (
@@ -11,6 +12,7 @@ export default function Profile() {
             <Nav />
             <Cube/>
             <h2 className="home-title">Frontend and so much more</h2>
+            <Team/>
             <Footer></Footer>
             <CookieConsent className="d-block"
                 enableDeclineButton={true}
