@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Cube() {
     return (
         <>
@@ -14,7 +16,10 @@ export default function Cube() {
             </div>
             <div className="home-text-smalldevice font-MontserratBold">
                 <h3>Los mejores recursos para Frontend, diseño y más...</h3>
-                <h3 className="my-4">¡ Comparte tus favoritos !<i className="pi pi-share-alt ml-4" style={{cursor:`pointer`}}></i></h3>
+                <h3 className="mt-3">¡ Comparte tus favoritos !</h3>
+                <a href="#footer">
+                    <i className="pi pi-share-alt my-3" style={{cursor:`pointer`, background: `#2B193D`, color: `#fff`, borderRadius: `50%`, padding: `18px 10px`,paddingRight:`13px` ,lineHeight: `5px`}}></i>
+                </a>
                 <h3 className="mt-2" style={{fontSize:`1rem`}}>Porque el código no lo es todo.<span style={{display:`block`, textAlign:`center`}} className="mt-2">Pero casi : )</span></h3>
             </div>
         </>

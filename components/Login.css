@@ -33,7 +33,7 @@
     }
 }
 
-/* HOME CONTENT CUBE COMPONENT */
+/* HOME CONTENT TEXT */
 .home-title {
     font-size: 2.5rem;
     font-family: 'MontserratBold';
@@ -43,23 +43,40 @@
     /* text-transform: uppercase; */
     text-align: center;
 }
+.home-text-largedevice {
+    color: #2B193D;
+        padding: 2rem;
+        font-size: 1.25rem;
+        text-align: center;
+        display: block;
+        background: #F8F2F3;
+        &:hover {
+            color: #484D6D;
+        }
+}
 .home-text-smalldevice {
-    color: #2B193D;
-    margin: 0 2rem 3rem 2rem;
-    font-size: 1.25rem;
-    text-align: center;
+    display: none;
 }
-.home-text-large {
-    color: #2B193D;
-}
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .home-title {
         font-size: 2rem;
+        margin-top: 0.5rem;
         & span {
             display: block;
         }
     }
-  }
+    .home-text-smalldevice {
+        color: #2B193D;
+        padding: 0 2rem 3rem 2rem;
+        font-size: 1.25rem;
+        text-align: center;
+        display: block;
+    }
+    .home-text-largedevice {
+        display: none;
+    }
+}
+
 /* HOME CONTENT TEAM COMPONENT */
 .icon-team {
     &:hover {

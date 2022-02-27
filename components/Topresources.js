@@ -3,8 +3,8 @@ import React from 'react'
 export default function Topresources() {
     return (
         <>
-            <h3 className="home-title">Top Recursos</h3>
-            <section className="card-area my-8 font-Montserrat">
+            <h3 className="home-title lg:my-0">Top Recursos</h3>
+            <section className="card-area my-8 md:mb-0 md:py-16 font-Montserrat">
                 <section className="card-section">
                     <div className="card">
                         <div className="flip-card">
@@ -185,10 +185,13 @@ export default function Topresources() {
                     </div>
                 </section>
             </section>
-            <div className="home-text-large font-Montserrat">
-                <h3 className="">Los mejores recursos para desarrolladores web, especialmente en el campo del Frontend y el diseño. </h3>
-                <h3 className="">No dudes en compartir con nosotros tus recursos favoritos para toda la comunidad.</h3>
-                <h3 className="">Porque el código no lo es todo. Pero casi : )</h3>
+            <div className="home-text-largedevice font-MontserratBold">
+                <h3>Los mejores recursos para Frontend, diseño y más...</h3>
+                <h3 className="mt-3">¡ Comparte tus favoritos !</h3>
+                <a href="#footer">
+                    <i className="pi pi-share-alt my-3" style={{cursor:`pointer`, background: `#2B193D`, color: `#fff`, borderRadius: `50%`, padding: `18px 10px`,paddingRight:`13px` ,lineHeight: `5px`}}></i>
+                </a>
+                <h3 className="mt-2" style={{fontSize:`1rem`}}>Porque el código no lo es todo.<span style={{display:`block`, textAlign:`center`}} className="mt-2">Pero casi : )</span></h3>
             </div>
         </>
     )

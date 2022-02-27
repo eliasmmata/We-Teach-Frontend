@@ -14,7 +14,7 @@ export function Footer() {
 
     return (
         <>
-            <footer className="footer-section font-Montserrat">
+            <footer className="footer-section font-Montserrat" id="footer">
                 <div className="container">
                     <div className="footer-cta pt-4 pb-4">
                         <div className="row">
@@ -42,7 +42,7 @@ export function Footer() {
                                 <div className="single-cta">
                                     <i className="far fa-envelope-open"></i>
                                     <div className="cta-text">
-                                        <h4 className="font-MontserratBold">Escríbenos</h4>
+                                        <h4 className="font-MontserratBold">Comparte</h4>
                                         <a target="_blank" rel="noreferrer"  href="mailto:eliasmmata@hotmail.com?Subject=Contacta%20con%20Phil%20WTF">eliasmmata@hotmail.com</a>
                                     </div>
                                 </div>
