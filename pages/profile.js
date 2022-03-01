@@ -1,5 +1,4 @@
 import Image from "next/image";
-import CookieConsent from "react-cookie-consent";
 import { Container } from "../components/Container"
 import Cube from "../components/Cube";
 import { Footer } from "../components/Footer";
@@ -8,8 +7,7 @@ import Team from "../components/Team";
 import Tech from "../components/Tech";
 import Topresources from "../components/Topresources";
 import Instagram from 'instagram-web-api';
-import Link from "next/link";
-
+import Users from "../models/userModel";
 
 export default function Profile({ posts }) {
     return (
@@ -54,15 +52,15 @@ export default function Profile({ posts }) {
 
 export async function getStaticProps(context) {
     const client = new Instagram({ username: 'eliasmmata', password: process.env.PASSWORD_API_IG });
-    /* await client.login() */
-    try {
+    await client.login()
+    /* try {
         await client.login()
     } catch (err) {
         if (err.error && err.error.message === 'checkpoint_required') {
             const challengeUrl = err.error.checkpoint_url
             await client.updateChallenge({ challengeUrl, choice: 1 })
         }
-    }
+    } */
 
     const response = await client.getPhotosByUsername({
         username: 'eliasmmata',
