@@ -14,7 +14,7 @@ export default function Home({ posts }) {
       <Container>
         <Login />
         {/* Instagram no puede hacerse como componente por Next js no pasa props de fetch */}
-        <div className="bg-background-100 pb-16">
+        {/* <div className="bg-background-100 pb-16">
           <p className="xl:text-4xl text-3xl text-center text-darkpurple font-MontserratBold pb-6 sm:w-100 mx-auto">Instagram</p>
           <div>
             <ul className="ig-list">
@@ -41,7 +41,7 @@ export default function Home({ posts }) {
               })}
             </ul>
           </div>
-        </div>
+        </div> */}
         <Footer />
       </Container>
     )
