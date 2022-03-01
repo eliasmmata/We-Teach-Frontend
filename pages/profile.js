@@ -7,7 +7,6 @@ import Team from "../components/Team";
 import Tech from "../components/Tech";
 import Topresources from "../components/Topresources";
 import Instagram from 'instagram-web-api';
-import Users from "../models/userModel";
 
 export default function Profile({ posts }) {
     return (
@@ -53,11 +52,11 @@ export default function Profile({ posts }) {
 export async function getStaticProps(context) {
     const client = new Instagram({ username: 'eliasmmata', password: process.env.PASSWORD_API_IG });
     await client.login()
-    /* try {
+   /*  try {
         await client.login()
     } catch (err) {
         if (err.error && err.error.message === 'checkpoint_required') {
-            const challengeUrl = err.error.checkpoint_url
+            const challengeUrl = err.error.checkpoint_url;
             await client.updateChallenge({ challengeUrl, choice: 1 })
         }
     } */
