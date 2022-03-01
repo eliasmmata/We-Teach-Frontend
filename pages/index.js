@@ -5,6 +5,7 @@ import { Login } from "../components/LoginOk";
 import Instagram from 'instagram-web-api';
 import Image from "next/image";
 import LoginForm from "../components/LoginForm";
+import { Footer } from "../components/Footer";
 
 export default function Home({ posts }) {
   const { data: session } = useSession()
@@ -41,6 +42,7 @@ export default function Home({ posts }) {
             </ul>
           </div>
         </div>
+        <Footer />
       </Container>
     )
   }
