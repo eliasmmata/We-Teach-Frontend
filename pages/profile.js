@@ -36,7 +36,7 @@ export default function Profile({ posts }) {
                                         <p className="font-Montserrat text-darkpurple pt-2">{node.edge_media_to_caption.edges[0]?.node.text}</p>
                                     </span>
                                     <a className="w-4/5 bg-darkpurple rounded-[3px] mx-auto my-4 hover:bg-spacecadet" href={`https://instagram.com/p/${node.shortcode}`} target="_blank" rel="noreferrer">
-                                        <button className="w-100 py-2 text-background-100 font-MontserratBold text-sm rounded-[3px] hover:bg-[#3D2357]" style={{ display: `flex`, justifyContent: `center` }}>
+                                        <button className="w-100 text-background-100 font-MontserratBold text-sm rounded-[3px] hover:bg-[#3D2357]" style={{ display: `flex`, justifyContent: `center`, padding: `0.75rem 0`}}>
                                             Ir a Ig
                                             <i className="pi pi-instagram ml-4 my-auto" style={{ 'fontSize': '1.5em' }}></i>
                                         </button>
@@ -53,7 +53,7 @@ export default function Profile({ posts }) {
 }
 
 export async function getStaticProps(context) {
-    const client = new Instagram({ username: 'eliasmmata', password: process.env.PASSWORD_IG });
+    const client = new Instagram({ username: 'eliasmmata', password: process.env.PASSWORD_API_IG });
     await client.login();
 
     const response = await client.getPhotosByUsername({
