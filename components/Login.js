@@ -23,7 +23,6 @@ export function Login({ csrfToken }) {
   console.log(resetCookieConsentValue());
 
   const signInUser = async (e) => {
-    console.log(email, password)
     e.preventDefault();
     let options = { redirect: false, email, password }
     const res = await signIn("credentials", options)
@@ -214,7 +213,6 @@ export function Login({ csrfToken }) {
       <Topresources />
       <Tech />
       <Team />
-
       <Footer />
     </>
   )
