@@ -3,11 +3,11 @@ import React from 'react'
 
 export default function Team() {
     return (
-        <div className="">
+        <div className="bg-background-100">
             <div className="container flex justify-center mx-auto pt-16">
                 <div>
                     <p className="text-independence text-lg text-center font-MontserratBold pb-3">EQUIPO</p>
-                    <h1 className="xl:text-4xl text-3xl text-center text-darkpurple font-MontserratBold pb-6 sm:w-100 mx-auto">Behind the Scenes</h1>
+                    <p className="xl:text-4xl text-3xl text-center text-darkpurple font-MontserratBold sm:w-100 mx-auto">Behind the Scenes</p>
                 </div>
             </div>
             <div className="w-full py-4" style={{background:`#F8F2F3`}}>
