@@ -1,9 +1,10 @@
 // import 'flowbite';
 import { useSession } from "next-auth/react"
 import { Container } from "../components/Container";
-import { Login } from "../components/Login";
+import { Login } from "../components/LoginOk";
 import Instagram from 'instagram-web-api';
 import Image from "next/image";
+import LoginForm from "../components/LoginForm";
 
 export default function Home({ posts }) {
   const { data: session } = useSession()
@@ -11,6 +12,7 @@ export default function Home({ posts }) {
     return (
       <Container>
         <Login />
+        {/* Instagram no puede hacerse como componente por Next js no pasa props de fetch */}
         <div className="bg-background-100 pb-16">
           <p className="xl:text-4xl text-3xl text-center text-darkpurple font-MontserratBold pb-6 sm:w-100 mx-auto">Instagram</p>
           <div>
@@ -43,7 +45,7 @@ export default function Home({ posts }) {
     )
   }
   return (
-    <h1>not Logged</h1>
+    <LoginForm />
   )
 }
 

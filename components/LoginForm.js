@@ -6,7 +6,6 @@ import Image from "next/image";
 import Typewriter from 'typewriter-effect';
 
 export default function LoginForm({ csrfToken }) {
-    const { data: session } = useSession()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState(null)

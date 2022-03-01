@@ -1,6 +1,4 @@
 import { useSession, signIn, signOut, getCsrfToken, getSession } from "next-auth/react"
-import CookieConsent, { Cookies, getCookieConsentValue, resetCookieConsentValue } from "react-cookie-consent";
-import Image from "next/image";
 import Router from "next/router";
 import { useState } from "react";
 import { Footer } from "./Footer";
@@ -18,47 +16,9 @@ export function Login({ csrfToken }) {
   const [password, setPassword] = useState('')
   const [message, setMessage] = useState(null)
 
-  // true una vez aceptadas las cookies
-  console.log(getCookieConsentValue());
-  // consentimiento
-  console.log(resetCookieConsentValue());
-
-  const signInUser = async (e) => {
-    e.preventDefault();
-    let options = { redirect: false, email, password }
-    const res = await signIn("credentials", options)
-    setMessage(null)
-    if (res?.error) {
-      setMessage(res.error)
-    }
-    // return Router.push("/")
-  }
-
-  const signUpUser = async (e) => {
-    e.preventDefault();
-    setMessage(null)
-
-    const res = await fetch('/api/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, password }),
-    })
-    let data = await res.json()
-    if (data.message) {
-      setMessage(data.message)
-    }
-    if (data.message == "Registrado satisfactoriamente") {
-      let options = { redirect: false, email, password }
-      const res = await signIn("credentials", options)
-      return Router.push("/")
-    }
-  }
   if (!session) {
     return (
       <LoginForm/>
-
     )
   }
   return (
