@@ -29,7 +29,7 @@ export default function Profile({ posts }) {
                             }
                             return (
                                 <li key={post} className="ig-li">
-                                    <a href={`https://instagram.com/p/${node.shortcode}`} target="_blank" rel="noreferrer" passHref className="hover:brightness-200 cursor-grabbing">
+                                    <a href={`https://instagram.com/p/${node.shortcode}`} target="_blank" rel="noreferrer" passHref className="hover:brightness-110 cursor-pointer">
                                         <Image src={node.display_resources[0].src} alt="instagram pic" width={250} height={250} className="" />
                                     </a>
                                     <span className="text-ig-container">
@@ -54,8 +54,8 @@ export default function Profile({ posts }) {
 
 export async function getStaticProps(context) {
     const client = new Instagram({ username: 'eliasmmata', password: process.env.PASSWORD_API_IG });
-    await client.login()
-   /*  try {
+    /* await client.login() */
+    try {
         await client.login()
     } catch (err) {
         if (err.error && err.error.message === 'checkpoint_required') {
@@ -63,7 +63,7 @@ export async function getStaticProps(context) {
             await client.updateChallenge({ challengeUrl, choice: 1 })
         }
     }
- */
+
     const response = await client.getPhotosByUsername({
         username: 'eliasmmata',
     });
