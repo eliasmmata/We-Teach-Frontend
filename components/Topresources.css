@@ -20,17 +20,17 @@
     margin-top: .2rem;
   }
 
-  .inside-page__heading--city,
-  .card-front__text-view--city { color: #2C365E; }
+  .inside-page__heading--one,
+  .card-front__text-view--one { color: #2C365E; }
 
-  .inside-page__heading--ski,
-  .card-front__text-view--ski { color: #4B8F8C; }
+  .inside-page__heading--two,
+  .card-front__text-view--two { color: #4B8F8C; }
 
-  .inside-page__heading--beach,
-  .card-front__text-view--beach { color: #484D6D; }
+  .inside-page__heading--three,
+  .card-front__text-view--three { color: #484D6D; }
 
-  .inside-page__heading--camping,
-  .card-front__text-view--camping { color: #C5979D; }
+  .inside-page__heading--four,
+  .card-front__text-view--four { color: #C5979D; }
 
   /* Front cover */
 
@@ -89,39 +89,39 @@
     z-index: -1;
   }
 
-  .inside-page__btn--city {
+  .inside-page__btn--one {
     border-color: #2C365E;
     color: #2C365E;
   }
 
-  .inside-page__btn--city::before {
+  .inside-page__btn--one::before {
     background-color: #2C365E;
   }
 
-  .inside-page__btn--ski {
+  .inside-page__btn--two {
     border-color: #4B8F8C;
     color: #4B8F8C;
   }
 
-  .inside-page__btn--ski::before {
+  .inside-page__btn--two::before {
     background-color: #4B8F8C;
   }
 
-  .inside-page__btn--beach {
+  .inside-page__btn--three {
     border-color: #484D6D;
     color: #484D6D;
   }
 
-  .inside-page__btn--beach::before {
+  .inside-page__btn--three::before {
     background-color: #484D6D;
   }
 
-  .inside-page__btn--camping {
+  .inside-page__btn--four {
     border-color: #C5979D;
     color: #C5979D;
   }
 
-  .inside-page__btn--camping::before {
+  .inside-page__btn--four::before {
     background-color: #C5979D;
   }
 
@@ -237,7 +237,7 @@
     padding: .75rem;
   }
 
-  .card-front__tp--city {
+  .card-front__tp--one {
     background: linear-gradient(
       to bottom,
       #2C365E,
@@ -245,7 +245,7 @@
     );
   }
 
-  .card-front__tp--ski {
+  .card-front__tp--two {
     background: linear-gradient(
       to bottom,
       #4B8F8C,
@@ -253,7 +253,7 @@
     );
   }
 
-  .card-front__tp--beach {
+  .card-front__tp--three {
     background: linear-gradient(
       to bottom,
       #484D6D,
@@ -261,7 +261,7 @@
     );
   }
 
-  .card-front__tp--camping {
+  .card-front__tp--four {
     background: linear-gradient(
       to bottom,
       #A7626B,

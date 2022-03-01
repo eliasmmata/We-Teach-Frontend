@@ -1,0 +1,53 @@
+.backgroundOne {
+    background-image: url('../public/images/react-logo.png') linear-gradient( to bottom, #C1FAFF, #61DBFB );
+    background-color: #C1FAFF;
+    background: url('../public/images/react-logo.png') center center repeat;
+    background: url('../public/images/react-logo.png') center center repeat, -moz-linear-gradient( to bottom, #C1FAFF, #61DBFB );
+    background: url('../public/images/react-logo.png') center center repeat, -webkit-linear-gradient( to bottom, #C1FAFF, #61DBFB );
+    background: url('../public/images/react-logo.png') center center repeat, -o-linear-gradient( to bottom, #C1FAFF, #61DBFB );
+    background: url('../public/images/react-logo.png') center center repeat, linear-gradient( to bottom, #C1FAFF, #61DBFB );
+    background-size: 15px;
+}
+.btnOne:before {
+    background-color: #00334D !important;
+}
+.backgroundTwo {
+    background-image: url('../public/images/css-logo.png') linear-gradient( to bottom, #FFE7D4, #F3B399 );
+    background-color: #FFE7D4;
+    background: url('../public/images/css-logo.png') center center repeat;
+    background: url('../public/images/css-logo.png') center center repeat, -moz-linear-gradient( to bottom, #FFE7D4, #F3B399 );
+    background: url('../public/images/css-logo.png') center center repeat, -webkit-linear-gradient( to bottom, #FFE7D4, #F3B399 );
+    background: url('../public/images/css-logo.png') center center repeat, -o-linear-gradient( to bottom, #FFE7D4, #F3B399 );
+    background: url('../public/images/css-logo.png') center center repeat, linear-gradient( to bottom, #FFE7D4, #F3B399 );
+    background-size: 8px;
+}
+.btnTwo:before {
+    background-color: #3A001E !important;
+}
+.backgroundThree {
+    background-image: url('../public/images/javascript-logo.png') linear-gradient( to bottom, #F0DB4F, #F0DB6F );
+    background-color: #F0DB4F;
+    background: url('../public/images/javascript-logo.png') top center repeat;
+    background: url('../public/images/javascript-logo.png') top center repeat, -moz-linear-gradient( to bottom, #F0DB4F, #F0DB6F );
+    background: url('../public/images/javascript-logo.png') top center repeat, -webkit-linear-gradient( to bottom, #F0DB4F, #F0DB6F );
+    background: url('../public/images/javascript-logo.png') top center repeat, -o-linear-gradient( to bottom, #F0DB4F, #F0DB6F );
+    background: url('../public/images/javascript-logo.png') top center repeat, linear-gradient( to bottom, #F0DB4F, #F0DB6F );
+    background-size: 3px;
+}
+.btnThree:before {
+    background-color: #131313 !important;
+}
+.backgroundFour {
+    background-image: url('../public/images/tailwind-logo.png') linear-gradient( to bottom, ###44A8B3, #fff );
+    background-color: ##44A8B3;
+    background: url('../public/images/tailwind-logo.png') top center repeat;
+    background: url('../public/images/tailwind-logo.png') top center repeat, -moz-linear-gradient( to bottom, ###44A8B3, #fff );
+    background: url('../public/images/tailwind-logo.png') top center repeat, -webkit-linear-gradient( to bottom, ###44A8B3, #fff );
+    background: url('../public/images/tailwind-logo.png') top center repeat, -o-linear-gradient( to bottom, ###44A8B3, #fff );
+    background: url('../public/images/tailwind-logo.png') top center repeat, linear-gradient( to bottom, ###44A8B3, #fff );
+    background-size: 8px;
+}
+.btnFour:before {
+    background-color: #132721 !important;
+}
+

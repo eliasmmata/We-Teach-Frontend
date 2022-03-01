@@ -20,6 +20,11 @@ module.exports = {
         'tuscany': '#C5979D',
         'indigo': {
           900: '#2B193D',
+        },
+        'background': {
+          100: '#F8F2F3',
+          200: '#D7EAE9',
+          900: '#2B193D',
         }
       }
     },
