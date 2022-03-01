@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Tech() {
@@ -23,7 +24,7 @@ export default function Tech() {
                                     </div>
                                     <div className="card-front__bt font-MontserratBold">
                                         <p className="card-front__text-view card-front__text-view--one text-[#00334D]">
-                                            Recursos<i className="pi pi-external-link ml-4 text-[#00334D]"></i>
+                                            Recursos<i className="pi pi-cog ml-4 text-[#00334D]"></i>
 
                                         </p>
                                     </div>
@@ -43,7 +44,9 @@ export default function Tech() {
                                 <p className="inside-page__text text-[#00334D]">
                                     Todo sobre los hooks, errores de compilación y consejos.
                                 </p>
-                                <a href="https://wakatime.com/" target='_blank' rel='noreferrer' className="inside-page__btn inside-page__btn--one font-MontserratBold text-[#00334D] btnOne" style={{ borderColor: `#00334D` }}>Más React</a>
+                                <Link href="/react">
+                                    <a className="inside-page__btn inside-page__btn--one font-MontserratBold text-[#00334D] btnOne" style={{ borderColor: `#00334D` }}>Más React</a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -66,7 +69,7 @@ export default function Tech() {
                                     </div>
                                     <div className="card-front__bt font-MontserratBold">
                                         <p className="card-front__text-view card-front__text-view--two text-[#3A001E]">
-                                            Recursos<i className="pi pi-external-link ml-4 text-[#3A001E]"></i>
+                                            Recursos<i className="pi pi-cog ml-4 text-[#3A001E]"></i>
 
                                         </p>
                                     </div>
@@ -86,7 +89,9 @@ export default function Tech() {
                                 <p className="inside-page__text text-[#3A001E]">
                                     Trucos, herramientas útiles, el temido flex y más...
                                 </p>
-                                <a href="https://www.freecodecamp.org/" target='_blank' rel='noreferrer' className="inside-page__btn inside-page__btn--two font-MontserratBold btnTwo text-[#3A001E]" style={{ borderColor: `#3A001E` }}>Más Css</a>
+                                <Link href="/css">
+                                    <a className="inside-page__btn inside-page__btn--two font-MontserratBold btnTwo text-[#3A001E]" style={{ borderColor: `#3A001E` }}>Más Css</a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -97,20 +102,20 @@ export default function Tech() {
                             <div className="flip-card__container">
                                 <div className="card-front">
                                     <div className="card-front__tp card-front__tp--three backgroundThree">
-                                        <h2 className="card-front__heading font-MontserratBold text-[#131313] text-3xl" style={{ textShadow: `2px 2px 1px rgba(240,219,79, 1)`}}>
+                                        <h2 className="card-front__heading font-MontserratBold text-[#131313] text-3xl" style={{ textShadow: `2px 2px 1px rgba(240,219,79, 1)` }}>
                                             JavaScript
                                         </h2>
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#131313]" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
-                                        <p className="card-front__text-price text-[#131313]" style={{ textShadow: `2px 2px 1px rgba(240,219,79, 1)`}}>
+                                        <p className="card-front__text-price text-[#131313]" style={{ textShadow: `2px 2px 1px rgba(240,219,79, 1)` }}>
                                             Consejos.log( )
                                         </p>
                                     </div>
 
                                     <div className="card-front__bt font-MontserratBold">
                                         <p className="card-front__text-view card-front__text-view--three text-[#131313]">
-                                            Recursos<i className="pi pi-external-link ml-4 text-[#131313]"></i>
+                                            Recursos<i className="pi pi-cog ml-4 text-[#131313]"></i>
 
                                         </p>
                                     </div>
@@ -130,7 +135,9 @@ export default function Tech() {
                                 <p className="inside-page__text text-[#131313]">
                                     Todo para convertirte en maestro y subir de nivel rápidamente.
                                 </p>
-                                <a href="https://www.pexels.com/" target='_blank' rel='noreferrer' className="inside-page__btn inside-page__btn--three font-MontserratBold btnThree text-[#131313]" style={{ borderColor: `#13313` }}>Más JS</a>
+                                <Link href="/javascript">
+                                    <a className="inside-page__btn inside-page__btn--three font-MontserratBold btnThree text-[#131313]" style={{ borderColor: `#13313` }}>Más JS</a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -154,7 +161,7 @@ export default function Tech() {
 
                                     <div className="card-front__bt font-MontserratBold">
                                         <p className="card-front__text-view card-front__text-view--four text-[#132721]">
-                                            Recursos<i className="pi pi-external-link ml-4 text-[#132721]"></i>
+                                            Recursos<i className="pi pi-cog ml-4 text-[#132721]"></i>
 
                                         </p>
                                     </div>
@@ -174,7 +181,9 @@ export default function Tech() {
                                 <p className="inside-page__text text-[#132721]">
                                     Una herramienta única para avanzar en tu estilado.
                                 </p>
-                                <a href="https://looka.com/" target='_blank' rel='noreferrer' className="inside-page__btn inside-page__btn--four font-MontserratBold btnFour text-[#132721]" style={{ borderColor: `#132721`}}>Más Tailwind</a>
+                                <Link href="/tailwind">
+                                    <a className="inside-page__btn inside-page__btn--four font-MontserratBold btnFour text-[#132721]" style={{ borderColor: `#132721` }}>Más Tailwind</a>
+                                </Link>
                             </div>
                         </div>
                     </div>

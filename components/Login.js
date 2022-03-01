@@ -9,6 +9,7 @@ import Typewriter from 'typewriter-effect';
 import Cube from "./Cube";
 import Team from "./Team";
 import Topresources from "./Topresources";
+import Tech from "./Tech";
 
 
 export function Login({ csrfToken }) {
@@ -212,6 +213,7 @@ export function Login({ csrfToken }) {
       <Nav />
       <Cube />
       <Topresources />
+      <Tech/>
       <Team />
       <Footer />
     </>

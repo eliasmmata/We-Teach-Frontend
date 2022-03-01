@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Container } from "../components/Container";
 
 export default function Custom404() {
+    const router = useRouter()
     return (
         <Container>
             <div
@@ -18,11 +20,18 @@ export default function Custom404() {
                         <p className="mb-8 text-center text-independance md:text-lg">
                             The page you are looking for does not exist.
                         </p>
-                        <Link href="/" className="px-6 py-2 text-sm font-semibold text-spacecadet bg-spacecadet">
-                            <a className="bg-wintergreen hover:bg-spacecadet text-white font-bold py-2 px-4 rounded">
-                                Go Home
-                            </a>
-                        </Link>
+                        <div style={{display:`flex`, justifyContent: "space-around", width:`100%`}}>
+                            <Link href="/" className="px-6 py-2 text-sm font-semibold text-spacecadet bg-spacecadet">
+                                <a className="bg-wintergreen hover:bg-spacecadet text-white font-bold py-2 px-4 rounded">
+                                    Go Home
+                                </a>
+                            </Link>
+                            <button onClick={() => router.back()} className="bg-wintergreen hover:bg-spacecadet text-white font-bold py-2 px-4 rounded">
+                                <a className="hover:bg-spacecadet text-white font-bold py-2 px-4 rounded">
+                                    Go Back
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
