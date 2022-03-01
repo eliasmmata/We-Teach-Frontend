@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home({ posts }) {
   const { data: session } = useSession()
-  if (!session) {
+  if (session) {
     return (
       <Container>
         <Login />
