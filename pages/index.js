@@ -7,7 +7,7 @@ import Image from "next/image";
 import LoginForm from "../components/LoginForm";
 import { Footer } from "../components/Footer";
 
-export default function Home({ posts }) {
+export default function Home(/* { posts } */) {
   const { data: session } = useSession()
   if (session) {
     return (
@@ -51,17 +51,17 @@ export default function Home({ posts }) {
   )
 }
 
-export async function getStaticProps(context) {
+/* export async function getStaticProps(context) {
   const client = new Instagram({ username: 'eliasmmata', password: process.env.PASSWORD_API_IG });
   await client.login()
-  /*  try {
-       await client.login()
-   } catch (err) {
-       if (err.error && err.error.message === 'checkpoint_required') {
-           const challengeUrl = err.error.checkpoint_url;
-           await client.updateChallenge({ challengeUrl, choice: 1 })
-       }
-   } */
+  //try {
+  //    await client.login()
+  // } catch (err) {
+  //     if (err.error && err.error.message === 'checkpoint_required') {
+  //       const challengeUrl = err.error.checkpoint_url;
+  //        await client.updateChallenge({ challengeUrl, choice: 1 })
+  //     }
+  // }
 
   const response = await client.getPhotosByUsername({
     username: 'eliasmmata',
@@ -72,4 +72,4 @@ export async function getStaticProps(context) {
       posts: response.user.edge_owner_to_timeline_media.edges,
     }, // will be passed to the page component as props
   };
-}
+} */
