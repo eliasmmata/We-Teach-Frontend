@@ -13,6 +13,7 @@ export default function Home({ posts }) {
   if (session) {
     return (
       <>
+
         <Container>
           <LoginOk />
           {/* Instagram no puede hacerse como componente por Next js no pasa props de fetch */}
@@ -21,7 +22,8 @@ export default function Home({ posts }) {
           </div>
           <Footer />
           {/* strategy="lazyOnload"  QUITADO DEL SCRIPT TEST */}
-          <Script id="Instafeed">
+          <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive" />
+          <Script id="Instafeed" strategy="beforeInteractive">
             {`var userFeed = new Instafeed({
                 get: 'user',
                 target: "instafeed-container",
