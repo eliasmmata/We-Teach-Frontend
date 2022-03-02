@@ -26,7 +26,7 @@ export default function Home({ posts } ) {
                 return (
                   <li key={post} className="ig-li">
                     <a href={`https://instagram.com/p/${node.shortcode}`} target="_blank" rel="noreferrer" passhref="true" className="hover:brightness-110 cursor-pointer">
-                      <Image src={node.display_resources[0].src} alt="instagram pic" width={250} height={250} />
+                      <Image src={node.display_resources[0].src || 'https://www.seekpng.com/png/full/957-9571383_instagram-logo-imagenes-de-la-app-de-instagram.png'} alt="instagram pic" width={250} height={250} />
                     </a>
                     <span className="text-ig-container">
                       <p className="font-Montserrat text-darkpurple pt-2">{node.edge_media_to_caption.edges[0]?.node.text}</p>
