@@ -22,8 +22,8 @@ export default function Home({ posts }) {
           </div>
           <Footer />
           {/* strategy="lazyOnload"  QUITADO DEL SCRIPT TEST */}
-          <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive" />
-          <Script id="show-banner" strategy="lazyOnload">
+          {/* <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive" /> */}
+          <Script id="show-banner">
             {`var userFeed = new Instafeed({
                 get: 'user',
                 target: "instafeed-container",
