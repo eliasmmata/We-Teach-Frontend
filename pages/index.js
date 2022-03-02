@@ -1,20 +1,21 @@
 // import 'flowbite';
 import { useSession } from "next-auth/react"
 import { Container } from "../components/Container";
-import { Login } from "../components/LoginOk";
 import Instagram from 'instagram-web-api';
 import Image from "next/image";
 import LoginForm from "../components/LoginForm";
+import LoginOk from "../components/LoginOk";
 import { Footer } from "../components/Footer";
 
-export default function Home(/* { posts } */) {
+export default function Home({ posts } ) {
   const { data: session } = useSession()
   if (session) {
     return (
       <Container>
-        <Login />
+        <LoginOk />
+
         {/* Instagram no puede hacerse como componente por Next js no pasa props de fetch */}
-        {/* <div className="bg-background-100 pb-16">
+        <div className="bg-background-100 pb-16">
           <p className="xl:text-4xl text-3xl text-center text-darkpurple font-MontserratBold pb-6 sm:w-100 mx-auto">Instagram</p>
           <div>
             <ul className="ig-list">
@@ -41,7 +42,7 @@ export default function Home(/* { posts } */) {
               })}
             </ul>
           </div>
-        </div> */}
+        </div>
         <Footer />
       </Container>
     )
@@ -51,7 +52,7 @@ export default function Home(/* { posts } */) {
   )
 }
 
-/* export async function getStaticProps(context) {
+export async function getStaticProps(context) {
   const client = new Instagram({ username: 'eliasmmata', password: process.env.PASSWORD_API_IG });
   await client.login()
   //try {
@@ -72,4 +73,4 @@ export default function Home(/* { posts } */) {
       posts: response.user.edge_owner_to_timeline_media.edges,
     }, // will be passed to the page component as props
   };
-} */
+}

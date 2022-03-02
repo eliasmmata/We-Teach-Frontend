@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Container } from "../components/Container"
 import Cube from "../components/Cube";
 import { Footer } from "../components/Footer";
