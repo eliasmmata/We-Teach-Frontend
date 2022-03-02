@@ -22,7 +22,7 @@ export default function Home({ posts }) {
           </div>
           <Footer />
           {/* strategy="lazyOnload"  QUITADO DEL SCRIPT TEST */}
-          <Script src="/scripts/instafeed.min.js" />
+          <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive" />
           <Script id="Instafeed">
             {`var userFeed = new Instafeed({
                 get: 'user',
