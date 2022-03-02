@@ -4,7 +4,6 @@ import { Container } from "../components/Container";
 import LoginForm from "../components/LoginForm";
 import LoginOk from "../components/LoginOk";
 import { Footer } from "../components/Footer";
-import Script from "next/script";
 import { Instagram } from "../components/Instagram";
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
     <>
       <Container>
         <LoginOk />
-        <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive" />
         <Instagram />
         <Footer />
       </Container>
