@@ -4,7 +4,6 @@ import React from 'react';
 export default function Instagram({posts}) {
   return (
     <div className="bg-background-100 pb-16">
-        <p className="xl:text-4xl text-3xl text-center text-darkpurple font-MontserratBold pb-6 sm:w-100 mx-auto">Instagram</p>
         <div>
           <ul className="ig-list">
             {posts.slice(0, 5).map(({ node }, post) => {

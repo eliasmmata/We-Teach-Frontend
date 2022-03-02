@@ -13,7 +13,7 @@ export default function Team() {
             <div className="w-full py-4" style={{background:`#F8F2F3`}}>
                 <div className="container mx-auto">
                     <div role="list" aria-label="Behind the scenes People " className="lg:flex md:flex sm:flex items-center xl:justify-center flex-wrap md:justify-center sm:justify-center lg:justify-center">
-                        <div role="listitem" className="xl:w-1/3 sm:w-3/4 md:w-3/5 relative mt-16 py-16 xl:w-2/5 lg:w-3/5">
+                        <div role="listitem" className="xl:w-1/3 sm:w-3/4 md:w-3/5 relative mt-16 py-12 xl:w-2/5 lg:w-3/5">
                             <div className="rounded overflow-hidden shadow-md bg-white">
                                 <div className="absolute -mt-20 w-full flex justify-center">
                                     <div className="h-32 w-32">

@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Qué tiene
 
-Llamada a la api de Instagram para insertar los posts.
+Llamada a la api de Instagram para insertar los posts (package instafeed.js)
 ## Getting Started
 
 First, run the development server:
