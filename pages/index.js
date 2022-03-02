@@ -20,7 +20,8 @@ export default function Home({ posts }) {
           <div id="instafeed-container" className="bg-background-100 pb-16">
           </div>
           <Footer />
-          <Script id="show-banner" strategy="lazyOnload">
+          {/* strategy="lazyOnload"  QUITADO DEL SCRIPT TEST */}
+          <Script id="Instafeed">
             {`var userFeed = new Instafeed({
                 get: 'user',
                 target: "instafeed-container",
