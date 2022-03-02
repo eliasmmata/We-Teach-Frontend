@@ -21,7 +21,7 @@ export default function Home({ posts }) {
           </div>
           <Footer />
           <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive" />
-          <Script id="show-banner">
+          <Script id="show-banner" strategy="beforeInteractive">
             {`var userFeed = new Instafeed({
                 get: 'user',
                 target: "instafeed-container",
@@ -57,7 +57,7 @@ export default function Home({ posts }) {
       <div id="instafeed-container" className="bg-background-100 pb-16">
       </div>
       <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive" />
-      <Script id="show-banner">
+      <Script id="show-banner" strategy="lazyOnload">
         {`var userFeed = new Instafeed({
                 get: 'user',
                 target: "instafeed-container",
