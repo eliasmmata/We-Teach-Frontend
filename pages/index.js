@@ -53,6 +53,9 @@ export default function Home({ posts }) {
   }
   return (
     <>
+      <p className="bg-background-100 mx-auto pb-4 lg:pb-8  text-center text-darkpurple font-MontserratBold sm:w-100 xl:text-4xl text-3xl">Instagram</p>
+      <div id="instafeed-container" className="bg-background-100 pb-16">
+      </div>
       <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive" />
       <Script id="show-banner">
         {`var userFeed = new Instafeed({
