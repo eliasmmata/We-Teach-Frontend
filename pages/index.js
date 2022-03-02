@@ -17,7 +17,6 @@ export default function Home() {
         <Container>
           <Script src="/scripts/instafeed.min.js"></Script>
           <LoginForm />
-          <Instagram />
         </Container>
       </>
     )
