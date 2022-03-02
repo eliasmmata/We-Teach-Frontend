@@ -8,7 +8,7 @@ import Topresources from "../components/Topresources";
 import { Instagram } from "../components/Instagram";
 
 
-export default function Profile() {
+export default function Testcomponents() {
     return (
         <Container>
             <Nav />
