@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         <Footer />
         <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive" />
-        <Script id="show-banner" strategy="beforeInteractive">
+        <Script id="show-banner">
           {`var userFeed = new Instafeed({
                 get: 'user',
                 target: "instafeed-container",
