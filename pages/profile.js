@@ -5,9 +5,6 @@ import { Nav } from "../components/Nav";
 import Team from "../components/Team";
 import Tech from "../components/Tech";
 import Topresources from "../components/Topresources";
-
-import Script from 'next/script';
-import Image from "next/image";
 import { Instagram } from "../components/Instagram";
 
 
