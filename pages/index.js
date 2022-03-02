@@ -9,22 +9,23 @@ import Script from 'next/script';
 
 export default function Home() {
   const { data: session } = useSession()
-  if (!session) {
+  if (session) {
     return (
       <>
-      <Script src="/scripts/instafeed.min.js" strategy="beforeInteractive"></Script>
-        <LoginForm />
+        <LoginOk />
         <Instagram />
+        <Footer />
+
+
       </>
     )
   }
   return (
     <>
-      <Container>
-        <LoginOk />
-        <Instagram />
-        <Footer />
-      </Container>
+     {/*  <Container>
+      </Container> */}
+      <LoginForm />
+      <Instagram />
     </>
   )
 }
