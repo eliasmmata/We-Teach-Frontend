@@ -18,5 +18,11 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   reactStrictMode: true,
-  plugins: ['postcss-import', 'tailwindcss', 'autoprefixer']
+  plugins: ['postcss-import', 'tailwindcss', 'autoprefixer'],
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./scripts/sitemap-generator");
+    }
+    return config;
+  },
 }
