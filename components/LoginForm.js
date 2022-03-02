@@ -24,7 +24,7 @@ export default function LoginForm({ csrfToken }) {
         if (res?.error) {
             setMessage(res.error)
         }
-        // return Router.push("/")
+        // no hace falta creo return Router.push("/")
     }
 
     const signUpUser = async (e) => {
