@@ -7,7 +7,9 @@ import { Footer } from "../components/Footer";
 import { Instagram } from "../components/Instagram";
 
 import Script from 'next/script';
+
 import { ProgressSpinner } from "primereact/progressspinner";
+import { useState } from "react";
 
 export default function Home() {
   const { data: session, status } = useSession();
