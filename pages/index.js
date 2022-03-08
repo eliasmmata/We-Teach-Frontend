@@ -30,7 +30,7 @@ export default function Home() {
       <Container>
         <Script src="/scripts/instafeed.min.js"></Script>
 
-        {loading || status === 'undefined' ? <ProgressSpinner /> : <LoginOk />}
+        {status === 'unauthenticated' || status === 'undefined' ? <ProgressSpinner /> : <LoginOk />}
         <Instagram />
         <Footer />
       </Container>
