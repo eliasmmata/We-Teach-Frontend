@@ -29,20 +29,12 @@ export default function Home() {
 
   return (
     <>
-      {status === "authenticated" &&
-      <>
-          <div style={{width: `100vw`, height: `100vh`, padding: `90vh 90vw`, background: `#fff`}}>
-            <ProgressSpinner className="animate__animated animate__fadeOut animate__infinite" />
-            <h3>Bienvenido {session.user.email}</h3>
-          </div>
-          <Container>
-            <Script src="/scripts/instafeed.min.js"></Script>
-            <LoginOk />
-            <Instagram />
-            <Footer />
-          </Container>
-      </>
-        }
+      <Container>
+        <Script src="/scripts/instafeed.min.js"></Script>
+        <LoginOk />
+        <Instagram />
+        <Footer />
+      </Container>
     </>
   )
 }
