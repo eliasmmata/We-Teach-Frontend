@@ -23,11 +23,15 @@ export default function Home() {
       </>
     )
   }
-  return (
+  else if(status === "loading") {
+    return(
+    <ProgressSpinner />
+    )
+  }
+  else return (
     <>
       <Container>
         <Script src="/scripts/instafeed.min.js"></Script>
-        {status === "loading" && <ProgressSpinner />}
         <LoginOk />
         <Instagram />
         <Footer />
