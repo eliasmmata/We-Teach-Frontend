@@ -21,6 +21,9 @@ export default function Home() {
       </>
     )
   }
+  else if (session === "loading") {
+    return <h1>LEYENDO</h1>
+    }
   return (
     <>
       <Container>
