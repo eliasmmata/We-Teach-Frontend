@@ -26,7 +26,7 @@ export default function Home() {
   }
   return (
     <>
-      {!authenticated && <ProgressSpinner/>}
+      {status === 'unauthenticated' && <ProgressSpinner/>}
       <Container>
         <Script src="/scripts/instafeed.min.js"></Script>
         <LoginOk />
