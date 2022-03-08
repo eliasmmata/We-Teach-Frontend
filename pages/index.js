@@ -11,9 +11,6 @@ import Script from 'next/script';
 
 export default function Home() {
   const { data: session } = useSession()
-  const { status } = useSession({
-    required: true,
-    })
   if (!session) {
     return (
       <>
@@ -24,10 +21,7 @@ export default function Home() {
       </>
     )
   }
-  else if (status === "loading") {
-    return <h1>LEYENDO</h1>
-    }
-  else return (
+  return (
     <>
       <Container>
         <Script src="/scripts/instafeed.min.js"></Script>
