@@ -25,11 +25,10 @@ export default function LoginForm({ csrfToken }) {
             position: toast.POSITION.TOP_CENTER
         });
         const res = await signIn("credentials", options)
-        console.log(res)
         setMessage(null)
         if (res?.error) {
             toast.error("Log In error", {
-                position: toast.POSITION.TOP_LEFT
+                position: toast.POSITION.TOP_CENTER
             });
             setMessage(res.error)
         }
@@ -135,7 +134,7 @@ export default function LoginForm({ csrfToken }) {
                                 </span>
                                 Inicia Sesión
                             </button>
-                            <ToastContainer autoClose={1500} />
+                            <ToastContainer autoClose={1500} limit={1} />
                             <button onClick={(e) => signUpUser(e)} className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" style={{ background: `#484D6D` }}>
                                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                                     <svg className="h-5 w-5 text-indigo-100 group-hover:text-indigo-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

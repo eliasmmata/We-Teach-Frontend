@@ -91,7 +91,7 @@ const signInUser = async ({ password, user }) => {
   }
   const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) {
-    throw new Error('contraseña incorrecta')
+    throw new Error('credenciales incorrectas')
   }
   return user
 }
