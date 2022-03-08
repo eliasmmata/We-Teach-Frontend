@@ -11,6 +11,9 @@ import Script from 'next/script';
 
 export default function Home() {
   const { data: session } = useSession()
+  const { status } = useSession({
+    required: true,
+    })
   if (!session) {
     return (
       <>
@@ -21,7 +24,7 @@ export default function Home() {
       </>
     )
   }
-  else if (session === "loading") {
+  else if (status === "loading") {
     return <h1>LEYENDO</h1>
     }
   return (
