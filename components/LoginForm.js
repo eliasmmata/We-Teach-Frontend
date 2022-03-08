@@ -22,16 +22,15 @@ export default function LoginForm({ csrfToken }) {
         e.preventDefault();
         let options = { redirect: false, email, password }
         toast("Logging in");
-
         toast.success("Bienvenido !", {
             position: toast.POSITION.TOP_CENTER
-        });
-        toast.error("Logging error !", {
-            position: toast.POSITION.TOP_LEFT
         });
         const res = await signIn("credentials", options)
         setMessage(null)
         if (res?.error) {
+            toast.error("Log In error", {
+                position: toast.POSITION.TOP_LEFT
+            });
             setMessage(res.error)
         }
         // no hace falta creo return Router.push("/")
@@ -54,6 +53,10 @@ export default function LoginForm({ csrfToken }) {
         }
         if (data.message == "Registrado satisfactoriamente") {
             let options = { redirect: false, email, password }
+            toast("Logging in");
+            toast.success("Bienvenido !", {
+                position: toast.POSITION.TOP_CENTER
+            });
             const res = await signIn("credentials", options)
             return Router.push("/")
         }
