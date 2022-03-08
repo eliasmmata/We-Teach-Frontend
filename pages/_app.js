@@ -1,6 +1,8 @@
 import { SessionProvider } from 'next-auth/react';
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
+import { store } from '../store';
 
 import * as googleanalytics from './api/auth/lib/googleanalytics';
 
@@ -12,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/tailwind.css';
 import '../styles/qube.min.css';
 import 'animate.css';
+import { Provider } from 'react-redux';
 
 
 
@@ -40,9 +43,11 @@ export default function MyApp({ Component, pageProps: { session, ...pageProps } 
         <link rel="icon" href="/images/favicon.png" />
 
       </Head>
-      <SessionProvider session={session}>
-        <Component {...pageProps} />
-      </SessionProvider>
+      <Provider store={store}>
+        <SessionProvider session={session}>
+          <Component {...pageProps} />
+        </SessionProvider>
+      </Provider>
     </>
   );
 }
