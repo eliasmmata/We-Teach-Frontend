@@ -10,6 +10,7 @@ import Script from 'next/script';
 
 import { ProgressSpinner } from "primereact/progressspinner";
 import { useState } from "react";
+import { userInfo } from "os";
 
 export default function Home() {
   const { data: session, status } = useSession();
@@ -30,7 +31,10 @@ export default function Home() {
     <>
       {status === "authenticated" &&
       <>
-          <ProgressSpinner className="animate__animated animate__fadeOut" />
+          <div style={{width: `100vw`, height: `100vh`, padding: `90vh 90vw`, background: `#fff`}}>
+            <ProgressSpinner className="animate__animated animate__fadeOut animate__repeat-2" />
+            <h3>Bienvenido {user.email}</h3>
+          </div>
           <Container>
             <Script src="/scripts/instafeed.min.js"></Script>
             <LoginOk />
