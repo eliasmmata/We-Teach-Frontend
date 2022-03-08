@@ -21,10 +21,6 @@ export default function LoginForm({ csrfToken }) {
     const signInUser = async (e) => {
         e.preventDefault();
         let options = { redirect: false, email, password }
-        toast("Logging in");
-        toast.success("Bienvenido !", {
-            position: toast.POSITION.TOP_CENTER
-        });
         const res = await signIn("credentials", options)
         setMessage(null)
         if (res?.error) {
@@ -32,6 +28,10 @@ export default function LoginForm({ csrfToken }) {
                 position: toast.POSITION.TOP_LEFT
             });
             setMessage(res.error)
+        } else {
+            toast.success("Logging in", {
+                position: toast.POSITION.TOP_CENTER
+              });
         }
         // no hace falta creo return Router.push("/")
     }
@@ -53,10 +53,7 @@ export default function LoginForm({ csrfToken }) {
         }
         if (data.message == "Registrado satisfactoriamente") {
             let options = { redirect: false, email, password }
-            toast("Logging in");
-            toast.success("Bienvenido !", {
-                position: toast.POSITION.TOP_CENTER
-            });
+            toast("Registered in");
             const res = await signIn("credentials", options)
             return Router.push("/")
         }
@@ -129,7 +126,6 @@ export default function LoginForm({ csrfToken }) {
                                 <a href="#" className="font-medium text-600 hover:text-500" style={{ color: `#C5979D` }}> ¿Olvidaste tu contraseña? </a>
                             </div>
                         </div>
-
                         <div>
                             <button onClick={(e) => signInUser(e)} className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" style={{ background: `#2C365E` }}>
                                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
