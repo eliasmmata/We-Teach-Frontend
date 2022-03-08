@@ -14,25 +14,23 @@ export default function Home() {
   const { data: session, status } = useSession();
   console.log(status)
 
-  if (!session) {
+  if (session) {
     return (
       <>
         <Container>
           <Script src="/scripts/instafeed.min.js"></Script>
-          <LoginForm />
+          {status === 'unauthenticated' || status === 'undefined' ? <ProgressSpinner /> : <LoginOk />}
+          <Instagram />
+          <Footer />
         </Container>
       </>
     )
   }
-
   return (
     <>
       <Container>
         <Script src="/scripts/instafeed.min.js"></Script>
-
-        {status === 'unauthenticated' || status === 'undefined' ? <ProgressSpinner /> : <LoginOk />}
-        <Instagram />
-        <Footer />
+        <LoginForm />
       </Container>
     </>
   )
