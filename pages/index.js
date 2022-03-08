@@ -24,16 +24,19 @@ export default function Home() {
       </>
     )
   }
+
   return (
     <>
-      {status === 'unauthenticated' && <ProgressSpinner/>}
-      <Container>
-        <Script src="/scripts/instafeed.min.js"></Script>
-        <LoginOk />
-        <Instagram />
-        <Footer />
-      </Container>
+      {status !== "authenticated"
+        ? <ProgressSpinner />
+        : <>
+          <Container>
+            <Script src="/scripts/instafeed.min.js"></Script>
+            <LoginOk />
+            <Instagram />
+            <Footer />
+          </Container>
+        </>}
     </>
   )
 }
-
