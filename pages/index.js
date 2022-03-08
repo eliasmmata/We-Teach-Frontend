@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <>
-      {status !== "authenticated"
+      {status === "authenticated"
         ? <ProgressSpinner />
         : <>
           <Container>
