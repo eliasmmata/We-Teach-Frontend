@@ -32,8 +32,8 @@ export default function Home() {
       {status === "authenticated" &&
       <>
           <div style={{width: `100vw`, height: `100vh`, padding: `90vh 90vw`, background: `#fff`}}>
-            <ProgressSpinner className="animate__animated animate__fadeOut animate__repeat-2" />
-            <h3>Bienvenido {user.email}</h3>
+            <ProgressSpinner className="animate__animated animate__fadeOut animate__infinite" />
+            <h3>Bienvenido {session.user.email}</h3>
           </div>
           <Container>
             <Script src="/scripts/instafeed.min.js"></Script>
