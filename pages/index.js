@@ -15,14 +15,6 @@ export default function Home() {
   const { data: session, status } = useSession();
   console.log(status)
 
-  const [spinner, setSpinner] = useState(<span> I am Loading... </span>);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setSpinner(<h1>Hello CodeSandbox</h1>);
-    }, 5000);
-  }, []);
-
   if (!session) {
     return (
       <>
