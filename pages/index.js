@@ -8,8 +8,6 @@ import { Instagram } from "../components/Instagram";
 
 import Script from 'next/script';
 
-import { ProgressSpinner } from "primereact/progressspinner";
-
 export default function Home() {
   const { data: session, status } = useSession();
   console.log(status)
@@ -30,7 +28,7 @@ export default function Home() {
     <>
       <Container>
         <Script src="/scripts/instafeed.min.js"></Script>
-        {session.user.email === 'undefined' ? <ProgressSpinner /> : <LoginOk />}
+        <LoginOk />
         <Instagram />
         <Footer />
       </Container>

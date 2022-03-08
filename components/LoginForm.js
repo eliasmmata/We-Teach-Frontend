@@ -5,6 +5,8 @@ import Image from "next/image";
 
 import Typewriter from 'typewriter-effect';
 
+import { ToastContainer, toast } from 'react-toastify';
+
 export default function LoginForm({ csrfToken }) {
     const { data: session } = useSession()
     const [email, setEmail] = useState('')
@@ -19,6 +21,7 @@ export default function LoginForm({ csrfToken }) {
     const signInUser = async (e) => {
         e.preventDefault();
         let options = { redirect: false, email, password }
+        toast("Wow so easy!");
         const res = await signIn("credentials", options)
         setMessage(null)
         if (res?.error) {
@@ -126,6 +129,7 @@ export default function LoginForm({ csrfToken }) {
                                 </span>
                                 Inicia Sesión
                             </button>
+                            <ToastContainer />
                             <button onClick={(e) => signUpUser(e)} className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" style={{ background: `#484D6D` }}>
                                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                                     <svg className="h-5 w-5 text-indigo-100 group-hover:text-indigo-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

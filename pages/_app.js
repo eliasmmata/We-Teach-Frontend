@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/tailwind.css';
 import '../styles/qube.min.css';
 import 'animate.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
