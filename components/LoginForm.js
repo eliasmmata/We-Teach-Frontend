@@ -21,23 +21,16 @@ export default function LoginForm({ csrfToken }) {
     const signInUser = async (e) => {
         e.preventDefault();
         let options = { redirect: false, email, password }
-        /* toast.success("Logging in", {
+        toast.success("Logging in", {
             position: toast.POSITION.TOP_CENTER
-        }); */
+        });
         const res = await signIn("credentials", options)
-        toast.promise(
-            res,
-            {
-              pending: 'Promise is pending',
-              success: 'Promise resolved 👌',
-              error: 'Promise rejected 🤯'
-            }
-        );
+        console.log(res)
         setMessage(null)
         if (res?.error) {
-            /* toast.error("Log In error", {
+            toast.error("Log In error", {
                 position: toast.POSITION.TOP_LEFT
-            }); */
+            });
             setMessage(res.error)
         }
         // no hace falta creo return Router.push("/")
