@@ -13,24 +13,26 @@ import { ProgressSpinner } from "primereact/progressspinner";
 export default function Home() {
   const { data: session, status } = useSession();
   console.log(status)
+  console.log(session)
 
-  if (session) {
+  if (!session) {
     return (
       <>
         <Container>
           <Script src="/scripts/instafeed.min.js"></Script>
-          {status === 'unauthenticated' || status === 'undefined' ? <ProgressSpinner /> : <LoginOk />}
-          <Instagram />
-          <Footer />
+          <LoginForm />
         </Container>
       </>
     )
   }
+
   return (
     <>
       <Container>
         <Script src="/scripts/instafeed.min.js"></Script>
-        <LoginForm />
+        {session.user.email === 'undefined' ? <ProgressSpinner /> : <LoginOk />}
+        <Instagram />
+        <Footer />
       </Container>
     </>
   )
