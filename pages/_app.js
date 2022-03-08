@@ -38,7 +38,6 @@ export default function MyApp({ Component, pageProps: { session, ...pageProps } 
         <title>We Teach Frontend</title>
         <meta name="description" content="WTF Developed by eliasmmata, powered by NextJS" />
         <link rel="icon" href="/images/favicon.png" />
-
       </Head>
       <SessionProvider session={session}>
         <Component {...pageProps} />

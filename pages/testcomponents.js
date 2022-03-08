@@ -7,12 +7,16 @@ import Tech from "../components/Tech";
 import Topresources from "../components/Topresources";
 import { Instagram } from "../components/Instagram";
 
+import { ProgressSpinner } from 'primereact/progressspinner';
+
+
 
 export default function Testcomponents() {
     return (
         <Container>
             <Nav />
             <Cube />
+            <ProgressSpinner />
             <Topresources />
             <Tech />
             <Team />

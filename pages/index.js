@@ -6,13 +6,24 @@ import LoginOk from "../components/LoginOk";
 import { Footer } from "../components/Footer";
 import { Instagram } from "../components/Instagram";
 
-import { ProgressSpinner } from 'primereact/progressspinner';
-
 import Script from 'next/script';
-
+import { ProgressSpinner } from "primereact/progressspinner";
 
 export default function Home() {
-  const { data: session, status } = useSession()
+  const { data: session, status } = useSession();
+  console.log(status)
+
+  const [show, setShow] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (loading) {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    }
+  }, [loading]);
+
   if (!session) {
     return (
       <>
@@ -23,9 +34,9 @@ export default function Home() {
       </>
     )
   }
-  else if(status === "loading") {
-    return(
-    <ProgressSpinner />
+  else if(loading) {
+    return (
+      <ProgressSpinner/>
     )
   }
   else return (
