@@ -4,7 +4,6 @@ import CookieConsent, { Cookies, getCookieConsentValue, resetCookieConsentValue 
 import Image from "next/image";
 
 import Typewriter from 'typewriter-effect';
-import { ProgressSpinner } from 'primereact/progressspinner';
 
 export default function LoginForm({ csrfToken }) {
     const { data: session } = useSession()
@@ -21,7 +20,7 @@ export default function LoginForm({ csrfToken }) {
         e.preventDefault();
         let options = { redirect: false, email, password }
         const res = await signIn("credentials", options)
-        setMessage(<ProgressSpinner/>)
+        setMessage(null)
         if (res?.error) {
             setMessage(res.error)
         }
