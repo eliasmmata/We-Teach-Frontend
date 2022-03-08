@@ -24,15 +24,15 @@ export default function LoginForm({ csrfToken }) {
         /* toast.success("Logging in", {
             position: toast.POSITION.TOP_CENTER
         }); */
-        toast.promise(
-            data,
-            {
-                undefined: 'Promise is loading',
-                Session: 'Promise resolved 👌',
-                null: 'Promise rejected 🤯'
-            }
-        )
         const res = await signIn("credentials", options)
+        toast.promise(
+            res,
+            {
+              pending: 'Promise is pending',
+              success: 'Promise resolved 👌',
+              error: 'Promise rejected 🤯'
+            }
+        );
         setMessage(null)
         if (res?.error) {
             /* toast.error("Log In error", {
