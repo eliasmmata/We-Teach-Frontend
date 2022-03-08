@@ -9,7 +9,7 @@ export const Instagram = () => {
                 get: 'user',
                 target: "instafeed-container",
                 resolution: 'low_resolution',
-                accessToken: 'IGQVJYcFVGWDYzS0Y3eWZAHM2N5U29rdzFfdk9PTE4wR1VGWTZAvYnUyZAWh0U3kySnR6T3dJVWZARaS0tOEdXLWFoT1FLaXlMUXUyRmMtWXJ3dE5MRm9US08wbl90X0pOZAUR4Tk5JMzFOOThQRzRkT1ZAtTwZDZD',
+                accessToken: 'IGQVJYbVB0VmdkaHNqUVc3NWd4STNDX3BDcjFZAWHVscmNyckFDZAUtNREt6LUtmQk01ekZArNzhUWHQ2bktkRkJhRlM3eGdMNTBWeXhRaVdHak1WMm9fUThaWk5TdXNCTWNEU3RFTjZAZATURsT0x5WGVEXwZDZD',
                 limit: 6,
                 template: '<div class="ig-li">' +
                             '<ul class="ig-list">' +
