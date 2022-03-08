@@ -27,7 +27,7 @@ export default function Home() {
   else if (status === "loading") {
     return <h1>LEYENDO</h1>
     }
-  return (
+  else return (
     <>
       <Container>
         <Script src="/scripts/instafeed.min.js"></Script>
