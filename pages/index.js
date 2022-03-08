@@ -9,10 +9,19 @@ import { Instagram } from "../components/Instagram";
 import Script from 'next/script';
 
 import { ProgressSpinner } from "primereact/progressspinner";
+import { useState } from "react";
 
 export default function Home() {
   const { data: session, status } = useSession();
   console.log(status)
+
+  const [spinner, setSpinner] = useState(<span> I am Loading... </span>);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSpinner(<h1>Hello CodeSandbox</h1>);
+    }, 5000);
+  }, []);
 
   if (!session) {
     return (
@@ -27,16 +36,17 @@ export default function Home() {
 
   return (
     <>
-      {status === "authenticated"
-        ? <ProgressSpinner />
-        : <>
+      {status === "authenticated" &&
+      <>
+          <ProgressSpinner className="animate__animated animate__fadeOut" />
           <Container>
             <Script src="/scripts/instafeed.min.js"></Script>
             <LoginOk />
             <Instagram />
             <Footer />
           </Container>
-        </>}
+      </>
+        }
     </>
   )
 }
