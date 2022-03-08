@@ -21,7 +21,14 @@ export default function LoginForm({ csrfToken }) {
     const signInUser = async (e) => {
         e.preventDefault();
         let options = { redirect: false, email, password }
-        toast("Wow so easy!");
+        toast("Logging in");
+
+        toast.success("Bienvenido !", {
+            position: toast.POSITION.TOP_CENTER
+        });
+        toast.error("Logging error !", {
+            position: toast.POSITION.TOP_LEFT
+        });
         const res = await signIn("credentials", options)
         setMessage(null)
         if (res?.error) {
@@ -204,19 +211,19 @@ export async function getServerSideProps(context) {
     const { req } = context;
     const session = await getSession({ req })
     if (session) {
-      // signed in
-      return {
-        redirect: { destination: "/" }
-      }
+        // signed in
+        return {
+            redirect: { destination: "/" }
+        }
     }
     const csrfToken = await getCsrfToken(context)
     const providers = await getProviders()
     return {
-      props: {
-        csrfToken,
-        /* csrfToken: JSON.parse(JSON.stringify(csrfToken)), */
-        providers,
-      },
+        props: {
+            csrfToken,
+            /* csrfToken: JSON.parse(JSON.stringify(csrfToken)), */
+            providers,
+        },
     }
-  }
+}
 
