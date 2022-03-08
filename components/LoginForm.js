@@ -21,15 +21,12 @@ export default function LoginForm({ csrfToken }) {
     const signInUser = async (e) => {
         e.preventDefault();
         let options = { redirect: false, email, password }
-        const res = await signIn("credentials", options)
-        toast.success("Logging in", {
+        toast("Logging in", {
             position: toast.POSITION.TOP_CENTER
         });
+        const res = await signIn("credentials", options)
         setMessage(null)
         if (res?.error) {
-            toast.error("Log In error", {
-                position: toast.POSITION.TOP_LEFT
-            });
             setMessage(res.error)
         }
         // no hace falta creo return Router.push("/")
