@@ -38,7 +38,7 @@
   );
 } */
 .Toastify__progress-bar {
-  linear-gradient(
+  color: linear-gradient(
   to right,
   #3D2357,
   #2B193D,
