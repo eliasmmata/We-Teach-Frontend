@@ -1,14 +1,19 @@
 #instafeed-container {
-    display: block;
+    /* display: block;
     justify-content: center;
+
     flex-wrap: wrap;
-    padding: 0rem 2rem;
+    padding: 0rem 2rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     & .ig-li {
-        padding: 1rem 2rem;
+        /* padding: 1rem 2rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; */
         & img {
-            min-height: 62vw;
+            min-height: 125px;
+            max-height: 125px;
+            min-width: 125px;
         }
         & .text-ig-container {
             margin-top: 1rem;
@@ -16,14 +21,17 @@
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            line-height: 20px; /* fallback */
+            line-height: 15px; /* fallback */
             max-height: 80px; /* fallback */
             -webkit-line-clamp: 3; /* number of lines to show */
             -webkit-box-orient: vertical;
             & p {
-                min-height: 30px;
                 color: #2B193D;
                 font-family: 'Montserrat';
+                min-height: 45px;
+                font-size: 12px;
+                padding: 0 10px;
+
             }
         }
         & .button-link {
@@ -33,10 +41,11 @@
                 font-family: 'MontserratBold';
                 display: flex;
                 justify-content: center;
-                width: 80%;
+                width: 90%;
                 margin: 1rem auto;
-                padding: 0.5rem 0;
+                padding: 0.25rem 0;
                 border-radius: 3px;
+                font-size: 14px;
             }
             &:hover {
                 background: #3D2357;
@@ -51,12 +60,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        padding: 0px 7.5vw 5vw 7.5vw !important;
-        gap: 4vw 7.5vw;
+        padding: 0px 10vw 5vw 10vw !important;
+        gap: 1.25vw 2.5vw;
         & .ig-li {
             padding: 0;
             & img {
                 min-height: 25vw !important;
+                width: 100%;
             }
             & .text-ig-container {
                 word-break: break-word;
@@ -69,8 +79,20 @@
                 -webkit-box-orient: vertical;
                 & p {
                     min-height: 60px;
+                    font-size: 1rem;
+                    line-height: 1.25rem;
+                    padding: 0;
+                }
+            }
+            & .button-link {
+                & button {
+                padding: 0.5rem 0;
+                font-size: 1.25rem;
                 }
             }
         }
     }
+}
+#instafeed-container > div:nth-child(3) {
+    display: none;
 }

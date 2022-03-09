@@ -10,7 +10,7 @@ export const Instagram = () => {
                 target: "instafeed-container",
                 resolution: 'low_resolution',
                 accessToken: 'IGQVJYbVB0VmdkaHNqUVc3NWd4STNDX3BDcjFZAWHVscmNyckFDZAUtNREt6LUtmQk01ekZArNzhUWHQ2bktkRkJhRlM3eGdMNTBWeXhRaVdHak1WMm9fUThaWk5TdXNCTWNEU3RFTjZAZATURsT0x5WGVEXwZDZD',
-                limit: 6,
+                limit: 7,
                 template: '<div class="ig-li">' +
                             '<ul class="ig-list">' +
                                 '<a href="{{link}}" target="_blank" rel="noreferrer">' +
