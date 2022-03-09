@@ -21,7 +21,7 @@ export default function LoginForm({ csrfToken }) {
     const signInUser = async (e) => {
         e.preventDefault();
         let options = { redirect: false, email, password }
-        toast("Logging in", {
+        toast("🔓 Logging in", {
             position: toast.POSITION.TOP_CENTER
         });
         const res = await signIn("credentials", options)

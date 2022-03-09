@@ -10,9 +10,8 @@ import { Instagram } from "../components/Instagram";
 import { ProgressSpinner } from 'primereact/progressspinner';
 
 
-
 export default function Testcomponents() {
-    return (
+  return (
         <Container>
             <Nav />
             <Cube />

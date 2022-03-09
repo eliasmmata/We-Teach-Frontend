@@ -26,19 +26,8 @@
     font-weight: 600;
   }
 }
-/* :root {
-  --toastify-color-progress-light: linear-gradient(
-  to right,
-  #3D2357,
-  #2B193D,
-  #29183A,
-  #1F122B,
-  #140C1D,
-  #0A060E
-  );
-} */
-.Toastify__progress-bar {
-  color: linear-gradient(
+.Toastify__progress-bar-theme--light {
+  background: linear-gradient(
   to right,
   #3D2357,
   #2B193D,
@@ -48,6 +37,7 @@
   #0A060E
   ) !important;
 }
+
 ul {
     margin: 0px;
     padding: 0px !important;
