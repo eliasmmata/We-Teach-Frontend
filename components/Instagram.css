@@ -60,12 +60,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        padding: 0px 10vw 5vw 10vw !important;
+        padding: 0px 15vw 5vw 15vw !important;
         gap: 1.25vw 2.5vw;
         & .ig-li {
             padding: 0;
             & img {
-                min-height: 25vw !important;
+                min-height: 20vw !important;
                 width: 100%;
             }
             & .text-ig-container {
