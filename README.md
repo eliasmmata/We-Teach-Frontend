@@ -6,6 +6,8 @@ Ve a [https://www.weteachfrontend.com/](https://www.weteachfrontend.com/) y reg�
 ## Qué tiene
 
 Llamada a la api de Instagram para insertar los posts (package instafeed.js)
+
+Fetch de recursos a través de las librerías AXIOS y SWR
 ## Getting Started
 
 First, run the development server:

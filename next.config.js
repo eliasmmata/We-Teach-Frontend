@@ -12,6 +12,7 @@ module.exports = {
       'avatars.githubusercontent.com',
       'i.stack.imgur.com',
       'scontent-mad1-1.cdninstagram.com',
+      'icon-library.com',
     ],
   },
   sassOptions: {
