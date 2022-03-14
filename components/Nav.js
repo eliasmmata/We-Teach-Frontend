@@ -22,7 +22,7 @@ export function Nav() {
             <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
                     <Link href="/" className="flex" passHref>
-                        <span style={{cursor:`pointer`}}>
+                        <span style={{ cursor: `pointer` }}>
                             <Image src={'/images/logo.png'} alt="logo" width={200} height={75}></Image>
                         </span>
                     </Link>
@@ -36,7 +36,7 @@ export function Nav() {
                         <div className={`container dropdown-menu hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 ${dropdown ? 'show hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600' : ''}`}
                             aria-labelledby="dropdownMenuButton"
                             id="dropdown"
-                            style={{width: `50%`, left:`50%` }}>
+                            style={{ width: `50%`, left: `50%` }}>
                             <div className="py-3 px-4">
                                 {session?.user?.name && <span className="block text-sm text-gray-900 dark:text-white">{session.user.name}</span>}
                                 {session && <span className="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">{session.user.email}</span>}
@@ -71,16 +71,24 @@ export function Nav() {
                     >
                         <ul className="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium sm:font-Montserrat md:font-MontserratBold uppercase">
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b rounded-t border-white">Home</a>
+                                <Link href="/">
+                                    <a className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b rounded-t border-white">Home</a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b border-white">Frontend</a>
+                                <Link href="/">
+                                    <a className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b border-white">React</a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b border-white">Styles</a>
+                                <Link href="/">
+                                    <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b border-white">Javascript</a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white rounded-b border-b border-white">React</a>
+                                <Link href="/">
+                                    <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white rounded-b border-b border-white">Styles</a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
