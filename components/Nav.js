@@ -71,23 +71,23 @@ export function Nav() {
                     >
                         <ul className="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium sm:font-Montserrat md:font-MontserratBold uppercase">
                             <li>
-                                <Link href="/">
+                                <Link href="/" passHref>
                                     <a className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b rounded-t border-white">Home</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
+                                <Link href="/react">
                                     <a className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b border-white">React</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
-                                    <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b border-white">Javascript</a>
+                                <Link href="/javascript">
+                                    <a className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white border-b border-white">Javascript</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
-                                    <a href="#" className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white rounded-b border-b border-white">Styles</a>
+                                <Link href="/styles">
+                                    <a className="block py-2 pr-4 pl-3 text-slate-50 md:text-indigo-900 bg-darkpurple md:bg-white rounded-b border-b border-white">Styles</a>
                                 </Link>
                             </li>
                         </ul>
