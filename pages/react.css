@@ -25,10 +25,14 @@
         & p {
             min-height: 100px;
         }
-        & a {
-            & :hover {
-                color: #4B8F8C;
-                filter: brightness(1.1);
+        & button {
+            & span {
+                display: flex;
+                align-items:center;
+                &:hover {
+                    color: #4B8F8C;
+                    filter: brightness(1.1);
+                }
             }
         }
         & ul {

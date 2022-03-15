@@ -11,6 +11,7 @@ const resourcesReact = [
             "slides",
             "carousel",
           ],
+          level: "beginner",
     },
     {
         id: 2,
@@ -24,6 +25,7 @@ const resourcesReact = [
             "iconos",
             "componentes",
           ],
+          level: "beginner",
     },
     {
         id: 3,
@@ -37,6 +39,7 @@ const resourcesReact = [
             "consejos",
             "tips",
           ],
+          level: "intermediate",
     },
     {
         id: 4,
@@ -49,6 +52,7 @@ const resourcesReact = [
             "cookies",
             "package",
           ],
+          level: "beginner",
     },
     {
         id: 5,
@@ -61,6 +65,7 @@ const resourcesReact = [
             "toast",
             "package",
           ],
+          level: "intermediate",
     },
     {
         id: 6,
@@ -73,6 +78,7 @@ const resourcesReact = [
             "instagram",
             "package",
           ],
+          level: "advanced",
     },
 ]
 

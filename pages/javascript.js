@@ -28,17 +28,18 @@ export default function JavascriptPage() {
           {data.map(resource => (
             <a key={resource.id} href={resource.url} target="_blank" rel="noreferrer">
               <div key={resource.id} className="resource px-4 py-3">
-                <div className='flex justify-between'>
+                <div className='flex justify-between title-img'>
                   <h2 className='font-MontserratBold text-xl text-spacecadet w-60 md:w-70'>{resource.title}</h2>
                   <Image src={resource.image} alt="image" width={50} height={50}></Image>
                 </div>
                 <p className='text-independence py-3'>{resource.description}</p>
-                <a className="flex items-center text-wintergreen pb-4 font-MontserratBold" href={resource.url} target="_blank" rel="noreferrer">
-                  Ver recurso
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </a>
+                <button className="flex items-center text-wintergreen pb-4 font-MontserratBold" href={resource.url} target="_blank" rel="noreferrer">
+                  <span>Ver recurso
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </button>
                 <ul className='text-tuscany text-sm'>
                   {resource.labels.map(label => (
                     <li key={label}>#{label}</li>
