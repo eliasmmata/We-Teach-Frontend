@@ -5,6 +5,7 @@
         border: 1px solid #d2d6dc;
         border-radius: 3px;
         transition: 0.25s;
+
         &:hover {
             box-shadow: 0 8px 30px 0 rgba(0,0,0, 12%);
             border: none;
@@ -14,9 +15,18 @@
             text-transform: capitalize;
             margin: auto 0;
         }
+        & p {
+            min-height: 100px;
+        }
+        & a {
+            & :hover {
+                color: #4B8F8C;
+                filter: brightness(1.1);
+            }
+        }
         & ul {
             display: flex;
-            flex-wrap:wrap;
+            /* flex-wrap:wrap; */
             & li {
                 margin: 0 1rem 0 0;
             }
