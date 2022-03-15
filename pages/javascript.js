@@ -30,7 +30,7 @@ export default function JavascriptPage() {
               <div key={resource.id} className="resource px-4 py-3">
                 <div className='flex justify-between'>
                   <h2 className='font-MontserratBold text-xl text-spacecadet w-60 md:w-70'>{resource.title}</h2>
-                  <Image src={resource.image} alt="image" width={55} height={55}></Image>
+                  <Image src={resource.image} alt="image" width={50} height={50}></Image>
                 </div>
                 <p className='text-independence py-3'>{resource.description}</p>
                 <a className="flex items-center text-wintergreen pb-4 font-MontserratBold" href={resource.url} target="_blank" rel="noreferrer">

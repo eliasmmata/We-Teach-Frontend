@@ -11,6 +11,12 @@
             border: none;
             transition: 0.25s;
         }
+        & .title-img {
+            & span {
+                max-height: 50px;
+                min-width: 50px;
+            }
+        }
         & h2 {
             text-transform: capitalize;
             margin: auto 0;
