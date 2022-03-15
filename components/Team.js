@@ -23,7 +23,7 @@ export default function Team() {
                                 <div className="px-6 mt-16">
                                     <h1 className="text-darkpurple font-MontserratBold text-3xl text-center mb-1">Elías Moreno</h1>
                                     <p className="text-tuscany text-sm text-center">Frontend Developer</p>
-                                    <p className="text-center text-spacecadet text-base pt-3 font-MontserratBold">Apasionado del desarrollo web, Frontend y diseño. Enamorado de React y Tailwindcss.</p>
+                                    <p className="text-center text-spacecadet text-base pt-3 px-2 font-MontserratBold">Apasionado del desarrollo web, Frontend y diseño. Actualmente aprendiendo React, NextJS y Tailwindcss.</p>
                                     <p className="text-center text-spacecadet text-base pt-3 font-MontserratBold">¡ Aquí puedes conocerme !</p>
                                     <div className="flex justify-center pt-4 pb-4">
                                         <a href="https://github.com/eliasmmata" className="icon-team mx-3" target="_blank" rel='noreferrer'>

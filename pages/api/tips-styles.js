@@ -62,7 +62,7 @@ const tipsStyles = [
     },
     {
         id: 6,
-        title: "¡Cambia imagen de color!",
+        title: "Filtro Imagen",
         description: "Convierte tu imagen en el color de tu paleta con este convertidor. Indispensable herramienta.",
         url: "https://isotropic.co/tool/hex-color-to-css-filter",
         image: "https://cdn-icons-png.flaticon.com/512/732/732007.png",

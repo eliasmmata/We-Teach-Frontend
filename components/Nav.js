@@ -29,7 +29,7 @@ export function Nav() {
                     <div className="flex items-center md:order-2">
                         <button onClick={toggleOpen} type="button" className="flex mr-3 text-sm bg-independence rounded-full md:mr-0 focus:ring-2 focus:ring-ring-inset dark:focus:ring-ring-inset" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
                             <span className="sr-only">Open user menu</span>
-                            {session ? <Image className="w-8 h-8 rounded-full" src={session.user.image || 'https://i.stack.imgur.com/34AD2.jpg'} alt="profile image" width={40} height={40} />
+                            {session ? <Image id="default-pic" className="w-8 h-8 rounded-full" src={session.user.image || 'https://i.stack.imgur.com/34AD2.jpg'} alt="profile image" width={40} height={40} />
                                 : <Image id="default-pic" className="w-8 h-8 rounded-full" src={'https://i.stack.imgur.com/34AD2.jpg'} alt="profile image" width={40} height={40} />}
                         </button>
                         {/* Dropdown menu profile pic */}

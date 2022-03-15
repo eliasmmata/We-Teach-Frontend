@@ -5,6 +5,7 @@
         border: 1px solid #d2d6dc;
         border-radius: 3px;
         transition: 0.25s;
+        min-height: 260px;
 
         &:hover {
             box-shadow: 0 8px 30px 0 rgba(0,0,0, 12%);
