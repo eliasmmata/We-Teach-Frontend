@@ -9,13 +9,14 @@ import axios from "axios";
 import { ProgressSpinner } from 'primereact/progressspinner';
 
 import Image from 'next/image';
+import Custom500 from './500';
 
 const fetcher = url => axios.get(url).then(res => res.data)
 
 export default function JavascriptPage() {
   const { data, error } = useSWR('api/tutorials-javascript', fetcher);
 
-  if (error) return <div>Failed to load</div>
+  if (error) return <Custom500></Custom500>
   if (!data) return <div style={{ padding: `66vw 25vw` }}><ProgressSpinner /></div>
 
   return (
@@ -28,8 +29,8 @@ export default function JavascriptPage() {
             <a key={resource.id} href={resource.url} target="_blank" rel="noreferrer">
               <div key={resource.id} className="resource px-4 py-3">
                 <div className='flex justify-between'>
-                  <h2 className='font-MontserratBold text-xl text-spacecadet'>{resource.title}</h2>
-                  <Image src={resource.image} alt="image" width={40} height={40}></Image>
+                  <h2 className='font-MontserratBold text-xl text-spacecadet w-60 md:w-70'>{resource.title}</h2>
+                  <Image src={resource.image} alt="image" width={55} height={55}></Image>
                 </div>
                 <p className='text-independence py-3'>{resource.description}</p>
                 <a className="flex items-center text-wintergreen pb-4 font-MontserratBold" href={resource.url} target="_blank" rel="noreferrer">

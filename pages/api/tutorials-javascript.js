@@ -8,16 +8,15 @@ const tutorialsJavascript = [
         labels: [
             "javascript",
             "tutorial",
-            "beginner",
             "principiante",
           ],
     },
     {
         id: 2,
         title: "Javascript para React",
-        description: "El Javascript que necesitas para aprender React con Carlos Azaustre.",
+        description: "El Javascript que necesitas para aprender React con Carlos Azaustre. Imprescindible",
         url: "https://www.youtube.com/watch?v=sKsNO-quEAw",
-        image: "https://d2vqpl3tx84ay5.cloudfront.net/tumblr_lsus01g1ik1qies3uo1_400.pngg",
+        image: "https://d2vqpl3tx84ay5.cloudfront.net/tumblr_lsus01g1ik1qies3uo1_400.png",
         labels: [
             "javascript",
             "react",
@@ -35,7 +34,6 @@ const tutorialsJavascript = [
             "javascript",
             "tutorial",
             "beginner",
-            "principiante",
           ],
     },
     {
@@ -48,7 +46,6 @@ const tutorialsJavascript = [
             "javascript",
             "tutorial",
             "beginner",
-            "principiante",
           ],
     },
     {
@@ -61,7 +58,6 @@ const tutorialsJavascript = [
             "javascript",
             "tutorial",
             "beginner",
-            "principiante",
           ],
     },
     {
@@ -74,7 +70,6 @@ const tutorialsJavascript = [
             "javascript",
             "tutorial",
             "beginner",
-            "principiante",
           ],
     },
 ]

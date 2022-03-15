@@ -14,6 +14,7 @@ module.exports = {
       'scontent-mad1-1.cdninstagram.com',
       'icon-library.com',
       'd2vqpl3tx84ay5.cloudfront.net',
+      'cdn-icons-png.flaticon.com',
     ],
   },
   sassOptions: {

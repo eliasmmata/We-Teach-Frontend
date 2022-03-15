@@ -12,6 +12,8 @@ Llamada a la api de Instagram para insertar los posts (package instafeed.js)
 Fetch de recursos a través de las librerías AXIOS y SWR
 
 Estilos con TailwindCss
+
+Google Analytics Y Google Tag Manager.
 ## Getting Started
 
 First, run the development server:
