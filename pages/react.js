@@ -9,7 +9,6 @@ import axios from "axios";
 import { ProgressSpinner } from 'primereact/progressspinner';
 
 import Image from 'next/image';
-import Link from 'next/link';
 
 const fetcher = url => axios.get(url).then(res => res.data)
 

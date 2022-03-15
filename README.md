@@ -5,9 +5,13 @@ Ve a [https://www.weteachfrontend.com/](https://www.weteachfrontend.com/) y reg�
 
 ## Qué tiene
 
+Login con NextAuth con usuario (a través de MongoDB), Google o Github
+
 Llamada a la api de Instagram para insertar los posts (package instafeed.js)
 
 Fetch de recursos a través de las librerías AXIOS y SWR
+
+Estilos con TailwindCss
 ## Getting Started
 
 First, run the development server:

@@ -26,7 +26,8 @@
         }
         & ul {
             display: flex;
-            /* flex-wrap:wrap; */
+            flex-wrap:wrap;
+            width: 105%;
             & li {
                 margin: 0 1rem 0 0;
             }

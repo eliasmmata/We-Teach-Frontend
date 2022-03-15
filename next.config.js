@@ -13,6 +13,7 @@ module.exports = {
       'i.stack.imgur.com',
       'scontent-mad1-1.cdninstagram.com',
       'icon-library.com',
+      'd2vqpl3tx84ay5.cloudfront.net',
     ],
   },
   sassOptions: {
