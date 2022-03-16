@@ -1,4 +1,15 @@
-
+.filter-container {
+    & button {
+        background: #484D6D;
+        border-radius: 3px;
+        padding: 0.3rem 0.5rem;
+        width: 100%;
+        max-width: 150px;
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+}
 .resourcescontainer {
     padding: 1rem;
     & .resource {
@@ -11,6 +22,19 @@
             box-shadow: 0 8px 30px 0 rgba(0,0,0, 12%);
             border: none;
             transition: 0.25s;
+        }
+        & #level {
+            min-height: 1px;
+            text-align: center;
+            margin-top: -2rem;
+            margin-bottom: 0.75rem;
+            background: white;
+            width: 45%;
+            /* color: #C5979D; */
+            border-radius: 0px 3px 0px 3px;
+            margin-left: 55%;
+            text-transform: capitalize;
+
         }
         & .title-img {
             & span {

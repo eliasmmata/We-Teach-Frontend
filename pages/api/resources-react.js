@@ -52,7 +52,7 @@ const resourcesReact = [
             "cookies",
             "package",
           ],
-          level: "beginner",
+          level: "intermediate",
     },
     {
         id: 5,
