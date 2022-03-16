@@ -6,10 +6,10 @@ const tipsStyles = [
         url: "https://css-tricks.com/",
         image: "https://cdn-icons-png.flaticon.com/512/732/732007.png",
         labels: [
-            "javascript",
-            "tutorial",
-            "principiante",
+            "css",
+            "documentación",
           ],
+          level: "beginner",
     },
     {
         id: 2,
@@ -18,11 +18,10 @@ const tipsStyles = [
         url: "https://rupl.github.io/unfold/",
         image: "https://cdn-icons-png.flaticon.com/512/732/732007.png",
         labels: [
-            "javascript",
-            "react",
+            "css",
             "tutorial",
-            "junior",
           ],
+          level: "beginner",
     },
     {
         id: 3,
@@ -31,10 +30,11 @@ const tipsStyles = [
         url: "https://flukeout.github.io",
         image: "https://cdn-icons-png.flaticon.com/512/732/732007.png",
         labels: [
-            "javascript",
+            "css",
             "tutorial",
-            "beginner",
+            "selectores",
           ],
+          level: "beginner",
     },
     {
         id: 4,
@@ -45,8 +45,8 @@ const tipsStyles = [
         labels: [
             "css",
             "grid",
-            "beginner",
           ],
+          level: "beginner",
     },
     {
         id: 5,
@@ -57,8 +57,8 @@ const tipsStyles = [
         labels: [
             "css",
             "flex",
-            "beginner",
           ],
+          level: "beginner",
     },
     {
         id: 6,
@@ -72,6 +72,7 @@ const tipsStyles = [
             "color",
             "filtro",
           ],
+          level: "beginner",
     },
 ]
 

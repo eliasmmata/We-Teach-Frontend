@@ -8,8 +8,8 @@ const tutorialsJavascript = [
         labels: [
             "javascript",
             "tutorial",
-            "principiante",
           ],
+          level: "beginner",
     },
     {
         id: 2,
@@ -21,8 +21,8 @@ const tutorialsJavascript = [
             "javascript",
             "react",
             "tutorial",
-            "junior",
           ],
+          level: "intermediate",
     },
     {
         id: 3,
@@ -33,8 +33,8 @@ const tutorialsJavascript = [
         labels: [
             "javascript",
             "tutorial",
-            "beginner",
           ],
+          level: "beginner",
     },
     {
         id: 4,
@@ -45,8 +45,8 @@ const tutorialsJavascript = [
         labels: [
             "javascript",
             "tutorial",
-            "beginner",
           ],
+          level: "beginner",
     },
     {
         id: 5,
@@ -57,8 +57,8 @@ const tutorialsJavascript = [
         labels: [
             "javascript",
             "tutorial",
-            "beginner",
           ],
+          level: "beginner",
     },
     {
         id: 6,
@@ -69,8 +69,8 @@ const tutorialsJavascript = [
         labels: [
             "javascript",
             "tutorial",
-            "beginner",
           ],
+          level: "beginner",
     },
 ]
 

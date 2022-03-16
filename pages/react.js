@@ -64,7 +64,6 @@ export default function ReactPage() {
                     <button value="advanced" onClick={handleBtns}>Advanced</button>
                     <button value="All" onClick={handleBtns}style={{gridColumnStart:`2`, background:`#626893`}}>Reset</button>
                 </div>
-
                 <div className='resourcescontainer font-Montserrat my-4 grid gap-6 md:grid md:grid-cols-2 md:gap-3 lg:mx-[10vw] lg:grid-cols-3 lg:gap-6 lg:my-8'>
                     {state && state.map((resource) => (
                         <a key={resource.id} href={resource.url} target="_blank" rel="noreferrer">
