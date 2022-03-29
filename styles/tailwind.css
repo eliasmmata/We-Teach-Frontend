@@ -4,7 +4,8 @@
 @import "../components/Tech.css";
 @import "../components/Instagram.css";
 @import "../components/Footer.css";
-@import "../pages/react.css";
+@import "../pages/resources.css";
+
 @tailwind base;
 
 @tailwind components;
