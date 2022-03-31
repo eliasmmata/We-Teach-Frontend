@@ -18,6 +18,8 @@ Estilos con TailwindCss
 Google Analytics Y Google Tag Manager.
 
 Estilos condicionales dependiendo del valor del dato.
+
+Set Up pruebas y manejo de errores (Jest, React Testing Library)
 ## Getting Started
 
 First, run the development server:
