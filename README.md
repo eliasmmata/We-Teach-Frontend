@@ -5,15 +5,19 @@ Ve a [https://www.weteachfrontend.com/](https://www.weteachfrontend.com/) y reg�
 
 ## Qué tiene
 
-Login con NextAuth con usuario (a través de MongoDB), Google o Github
+Login con NextAuth con usuario (a través de MongoDB), Google o Github.
 
-Llamada a la api de Instagram para insertar los posts (package instafeed.js)
+Llamada a la api de Instagram para insertar los posts (package instafeed.js).
 
-Fetch de recursos a través de las librerías AXIOS y SWR
+Fetch de recursos a través de las librerías AXIOS y SWR.
 
-Filtros dependiendo del nivel del usuario
+Filtros dependiendo del nivel del usuario.
 
-Estilos con TailwindCss
+Barra de búsqueda con Hooks y JavaScript filter.
+
+Botón Load More Hook.
+
+Estilos con TailwindCss.
 
 Google Analytics Y Google Tag Manager.
 

@@ -74,6 +74,19 @@ const tipsStyles = [
           ],
           level: "beginner",
     },
+    {
+        id: 7,
+        title: "Centrar botón",
+        description: "Centra botón en un DIV, y no vuelvas a olvidarlo (eso es más difícil : )",
+        url: "https://www.w3schools.com/howto/howto_css_center_button.asp",
+        image: "https://cdn-icons-png.flaticon.com/512/732/732007.png",
+        labels: [
+            "css",
+            "centrar",
+            "botón",
+          ],
+          level: "beginner",
+    },
 ]
 
 export default function Handler(req, res) {

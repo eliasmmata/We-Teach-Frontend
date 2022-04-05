@@ -4,6 +4,7 @@
 @import "../components/Tech.css";
 @import "../components/Instagram.css";
 @import "../components/Footer.css";
+@import "../components/SearchBar.css";
 @import "../pages/resources.css";
 
 @tailwind base;
@@ -88,4 +89,10 @@ a:hover {
   ) !important;
 }
 
-
+.instagramPostsContainer {
+  display: flex;
+  width: 88%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  min-height: 620px;
+}

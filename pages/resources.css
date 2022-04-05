@@ -69,3 +69,16 @@
         }
     }
 }
+#loadMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin: 0 auto 2rem auto;
+    padding: 0.25rem 2rem;
+    background: #C5979D;
+    color: white;
+    &:hover {
+        filter: brightness(1.1);
+    }
+}

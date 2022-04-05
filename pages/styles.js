@@ -10,13 +10,19 @@ import { ProgressSpinner } from 'primereact/progressspinner';
 
 import Image from 'next/image';
 import Custom500 from './500';
+import SearchBar from '../components/SearchBar';
 
 
 export default function StylesPage() {
     const fetcher = url => axios.get(url).then(res => res.data)
     const { data, error } = useSWR('api/tips-styles', fetcher);
-
     const [state, setState] = useState([]);
+
+    // boton leer mas
+   const [visible, setVisible] = useState(6);
+   const showMoreItems = () => {
+       setVisible((prevValue) => prevValue + 3);
+   }
 
     /* IMPORTANTE ESTE USEEFFECT PARA QUE RENDERICE EL CONTENIDO DEL MAP LA PRIMERA VEZ Y CON EL FILTRO SE QUEDEN SOLO LOS QUE QUEREMOS */
     useEffect(() => {
@@ -63,8 +69,9 @@ export default function StylesPage() {
                     <button value="advanced" onClick={handleBtns}>Advanced</button>
                     <button value="All" onClick={handleBtns} style={{ gridColumnStart: `2`, background: `#626893` }}>Reset</button>
                 </div>
+                <SearchBar placeholder='Busca tu recurso (maybe in English)' data={data} />
                 <div className='resourcescontainer font-Montserrat my-4 grid gap-6 md:grid md:grid-cols-2 md:gap-3 lg:mx-[10vw] lg:grid-cols-3 lg:gap-6 lg:my-8'>
-                    {state && state.map(resource => (
+                    {state && state.slice(0, visible).map(resource => (
                         <a key={resource.id} href={resource.url} target="_blank" rel="noreferrer">
                             <div key={resource.id} className="resource px-4 py-3">
                                 {resource.level === 'advanced'
@@ -92,6 +99,7 @@ export default function StylesPage() {
                         </a>
                     ))}
                 </div>
+                <button id="loadMore" onClick={showMoreItems}>Leer más</button>
                 <Footer />
             </Container>
         </>

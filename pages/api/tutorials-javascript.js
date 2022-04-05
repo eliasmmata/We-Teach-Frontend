@@ -72,6 +72,19 @@ const tutorialsJavascript = [
           ],
           level: "beginner",
     },
+    {
+        id: 7,
+        title: "Fetch API",
+        description: "Cómo hacer Fetch API en 6 minutos, más de 500k visitas.",
+        url: "https://www.youtube.com/watch?v=cuEtnrL9-H0",
+        image: "https://d2vqpl3tx84ay5.cloudfront.net/tumblr_lsus01g1ik1qies3uo1_400.png",
+        labels: [
+            "javascript",
+            "fetch",
+            "API"
+          ],
+          level: "intermediate",
+    },
 ]
 
 export default function Handler(req, res) {

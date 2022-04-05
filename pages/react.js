@@ -11,14 +11,34 @@ import { ProgressSpinner } from 'primereact/progressspinner';
 import Image from 'next/image';
 import Custom500 from './500';
 
+import SearchBar from '../components/SearchBar';
+
+import { InstagramEmbed } from 'react-social-media-embed';
 
 export default function ReactPage() {
+
     const fetcher = async url => await axios.get(url).then(res => res.data);
-
     const { data, error } = useSWR('api/resources-react', fetcher);
-
     const [state, setState] = useState([]);
 
+    // boton leer mas
+    const [visible, setVisible] = useState(6);
+    const showMoreItems = () => {
+        setVisible((prevValue) => prevValue + 3);
+    }
+
+    const [morePosts, setMorePosts] = useState(3);
+    const showMorePosts = () => {
+        setMorePosts((prevValue) => prevValue + 3);
+        if (morePosts >= 6) {
+            setMorePosts(3);
+        }
+    }
+    const showLessPosts = () => {
+        if (morePosts > 3) {
+            setMorePosts((prevValue) => prevValue - 3);
+        }
+    }
     /* IMPORTANTE ESTE USEEFFECT PARA QUE RENDERICE EL CONTENIDO DEL MAP LA PRIMERA VEZ Y CON EL FILTRO SE QUEDEN SOLO LOS QUE QUEREMOS */
     useEffect(() => {
         async function fetchState() {
@@ -62,16 +82,17 @@ export default function ReactPage() {
                     <button value="beginner" onClick={handleBtns}>Beginner</button>
                     <button value="intermediate" onClick={handleBtns}>Intermediate</button>
                     <button value="advanced" onClick={handleBtns}>Advanced</button>
-                    <button value="All" onClick={handleBtns}style={{gridColumnStart:`2`, background:`#626893`}}>Reset</button>
+                    <button value="All" onClick={handleBtns} style={{ gridColumnStart: `2`, background: `#626893` }}>Reset</button>
                 </div>
+                <SearchBar placeholder='Busca tu recurso (maybe in English)' data={data} />
                 <div className='resourcescontainer font-Montserrat my-4 grid gap-6 md:grid md:grid-cols-2 md:gap-3 lg:mx-[10vw] lg:grid-cols-3 lg:gap-6 lg:my-8'>
-                    {state && state.map((resource) => (
+                    {state && state.slice(0, visible).map((resource) => (
                         <a key={resource.id} href={resource.url} target="_blank" rel="noreferrer">
                             <div key={resource.id} className="resource px-4 py-3">
-                            {resource.level === 'advanced'
-                            ? <p id="level" className='py-1 text-sm' style={{color: '#70419F'}}>{resource.level}</p>
-                            : <p id="level" className='py-1 text-sm' style={{color: resource.level === 'beginner' ? '#4B8F8C' : '#8F60BE'}}>{resource.level}</p>
-                            }
+                                {resource.level === 'advanced'
+                                    ? <p id="level" className='py-1 text-sm' style={{ color: '#70419F' }}>{resource.level}</p>
+                                    : <p id="level" className='py-1 text-sm' style={{ color: resource.level === 'beginner' ? '#4B8F8C' : '#8F60BE' }}>{resource.level}</p>
+                                }
                                 <div className='flex justify-between title-img'>
                                     <h2 className='font-MontserratBold text-xl text-spacecadet w-60 md:w-70'>{resource.title}</h2>
                                     <Image src={resource.image} alt="image" width={50} height={50}></Image>
@@ -93,8 +114,32 @@ export default function ReactPage() {
                         </a>
                     ))}
                 </div>
+                <button id="loadMore" onClick={showMoreItems}>Leer más</button>
+                <h2 className="font-MontserratBold text-3xl text-center text-spacecadet mt-16 mb-8">Top Cuentas IG</h2>
+                <div className="instagramPostsContainer mb-4">
+                    <i className="pi pi-chevron-left" onClick={showLessPosts} style={{ margin: `auto 0`, background: `#2B193D`, borderRadius: `50%`, color: `#fff`, padding: `0.5rem`, cursor: `pointer` }}></i>
+                    {morePosts === 3 &&
+                        <InstagramEmbed url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />
+                    }
+                    {morePosts === 3 &&
+                        <InstagramEmbed url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />
+                    }
+                    {morePosts === 3 &&
+                        <InstagramEmbed url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />
+                    }
+                    {morePosts === 6 &&
+                        <InstagramEmbed url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />
+                    }
+                    {morePosts === 6 &&
+                        <InstagramEmbed url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />
+                    }
+                    {morePosts === 6 &&
+                        <InstagramEmbed url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />
+                    }
+                    <i className="pi pi-chevron-right" onClick={showMorePosts} style={{ margin: `auto 0`, background: `#2B193D`, borderRadius: `50%`, color: `#fff`, padding: `0.5rem`, cursor: `pointer` }}></i>
+                </div>
                 <Footer />
-            </Container>
+            </Container >
         </>
     )
 }

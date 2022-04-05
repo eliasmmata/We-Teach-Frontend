@@ -80,6 +80,45 @@ const resourcesReact = [
           ],
           level: "advanced",
     },
+    {
+        id: 7,
+        title: "Load More Button",
+        description: "Hook sencillo para cargar más elementos onClick en lugar de todos a la vez.",
+        url: "https://www.youtube.com/watch?v=Ka3OQpwqxXA",
+        image: "https://icon-library.com/images/react-icon/react-icon-15.jpg",
+        labels: [
+            "react",
+            "loadMore",
+            "hooks",
+          ],
+          level: "intermediate",
+    },
+    {
+        id: 8,
+        title: "Filter Search Bar",
+        description: "Sencillo tutorial para crear una barra de búsqueda con Hooks y JavaScript filter.",
+        url: "https://www.youtube.com/watch?v=x7niho285qs",
+        image: "https://icon-library.com/images/react-icon/react-icon-15.jpg",
+        labels: [
+            "react",
+            "searchBar",
+            "filter",
+          ],
+          level: "intermediate",
+    },
+    {
+        id: 9,
+        title: "Embed Social Media",
+        description: "Integra fácilmente publicaciones de Facebook, Instagram, LinkedIn, TikTok, Twitter y YouTube en React..",
+        url: "https://www.npmjs.com/package/react-social-media-embed",
+        image: "https://icon-library.com/images/react-icon/react-icon-15.jpg",
+        labels: [
+            "package",
+            "embed",
+            "socialMedia",
+          ],
+          level: "intermediate",
+    },
 ]
 
 export default function Handler(req, res) {
