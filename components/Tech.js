@@ -89,7 +89,7 @@ export default function Tech() {
                                 <p className="inside-page__text text-[#3A001E]">
                                     Trucos, herramientas útiles, el temido flex y más...
                                 </p>
-                                <Link href="/css">
+                                <Link href="/styles">
                                     <a className="inside-page__btn inside-page__btn--two font-MontserratBold btnTwo text-[#3A001E]" style={{ borderColor: `#3A001E` }}>Más Css</a>
                                 </Link>
                             </div>
@@ -181,7 +181,7 @@ export default function Tech() {
                                 <p className="inside-page__text text-[#132721]">
                                     Una herramienta única para avanzar en tu estilado.
                                 </p>
-                                <Link href="/tailwind">
+                                <Link href="/styles">
                                     <a className="inside-page__btn inside-page__btn--four font-MontserratBold btnFour text-[#132721]" style={{ borderColor: `#132721` }}>Más Tailwind</a>
                                 </Link>
                             </div>
