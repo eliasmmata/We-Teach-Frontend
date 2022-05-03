@@ -14,6 +14,8 @@ import Custom500 from './500';
 import SearchBar from '../components/SearchBar';
 
 import { InstagramEmbed } from 'react-social-media-embed';
+import MediaQuery from "react-responsive";
+
 
 export default function ReactPage() {
 
@@ -116,6 +118,7 @@ export default function ReactPage() {
                 </div>
                 <button id="loadMore" onClick={showMoreItems}>Leer más</button>
                 <h2 className="font-MontserratBold text-3xl text-center text-spacecadet mt-16 mb-8">Top Cuentas IG</h2>
+                <MediaQuery minWidth={768} >
                 <div className="instagramPostsContainer mb-4">
                     <i className="pi pi-chevron-left" onClick={showLessPosts} style={{ margin: `auto 0`, background: `#2B193D`, borderRadius: `50%`, color: `#fff`, padding: `0.5rem`, cursor: `pointer` }}></i>
                     {morePosts === 3 &&
@@ -138,15 +141,30 @@ export default function ReactPage() {
                     }
                     <i className="pi pi-chevron-right" onClick={showMorePosts} style={{ margin: `auto 0`, background: `#2B193D`, borderRadius: `50%`, color: `#fff`, padding: `0.5rem`, cursor: `pointer` }}></i>
                 </div>
+                </MediaQuery>
+                <MediaQuery maxWidth={767} >
+                    <div className="instagramPostsContainerResponsive mb-4">
+                        <div style={{ flexShrink: `0` }}>
+                            <InstagramEmbed url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />
+                        </div>
+                        <div>
+                            <InstagramEmbed url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />
+                        </div>
+                        <div>
+                            <InstagramEmbed url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />
+                        </div>
+                        <div>
+                            <InstagramEmbed url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />
+                        </div>
+                        <div>
+                            <InstagramEmbed url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />
+                        </div>
+                        <div>
+                            <InstagramEmbed url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />
+                        </div>
+                    </div>
+                </MediaQuery>
 
-                <div className="instagramPostsContainerResponsive mb-4">
-                    <InstagramEmbed url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />
-                    <InstagramEmbed url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />
-                    <InstagramEmbed url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />
-                    <InstagramEmbed url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />
-                    <InstagramEmbed url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />
-                    <InstagramEmbed url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />
-                </div>
                 <Footer />
             </Container >
         </>

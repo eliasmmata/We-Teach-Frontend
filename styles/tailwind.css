@@ -97,23 +97,26 @@ a:hover {
   min-height: 620px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .instagramPostsContainer {
       display: none;
+      visibility: hidden;
   }
   .instagramPostsContainerResponsive {
-    display: flex;
-    width: 95%;
-    overflow: scroll;
     margin: 0em 1em;
-    & .rsme-embed {
-      flex-shrink: 0;
-      margin-right: 15px;
+    width: 95vw;
+    display: flex;
+    overflow: scroll;
+      & .rsme-embed {
+        flex-shrink: 0;
+        margin-right: 15px;
+      }
     }
-}
 }
 @media only screen and (min-width: 768px) {
   .instagramPostsContainerResponsive {
       display: none;
+      visibility: hidden;
   }
 }
+
