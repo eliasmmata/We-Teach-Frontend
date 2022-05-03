@@ -138,6 +138,15 @@ export default function ReactPage() {
                     }
                     <i className="pi pi-chevron-right" onClick={showMorePosts} style={{ margin: `auto 0`, background: `#2B193D`, borderRadius: `50%`, color: `#fff`, padding: `0.5rem`, cursor: `pointer` }}></i>
                 </div>
+
+                <div className="instagramPostsContainerResponsive mb-4">
+                    <InstagramEmbed url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />
+                    <InstagramEmbed url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />
+                    <InstagramEmbed url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />
+                    <InstagramEmbed url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />
+                    <InstagramEmbed url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />
+                    <InstagramEmbed url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />
+                </div>
                 <Footer />
             </Container >
         </>

@@ -2,61 +2,61 @@
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
     <loc>http://localhost:3000/404</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/500</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/aviso-legal</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/books</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/javascript</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/politica-de-privacidad</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/react</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/styles</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/testcomponents</loc>
-    <lastmod>2022-04-05T16:08:53.351Z</lastmod>
+    <lastmod>2022-05-03T13:38:07.860Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

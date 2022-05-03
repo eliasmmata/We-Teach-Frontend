@@ -119,6 +119,19 @@ const resourcesReact = [
           ],
           level: "intermediate",
     },
+    {
+        id: 10,
+        title: "React Full Tutorial",
+        description: "Tutorial de React 8 horas de FreeCodeCamp.",
+        url: "https://www.youtube.com/watch?v=6Jfk8ic3KVk",
+        image: "https://icon-library.com/images/react-icon/react-icon-15.jpg",
+        labels: [
+            "tutorial",
+            "react",
+            "start",
+          ],
+          level: "beginner",
+    },
 ]
 
 export default function Handler(req, res) {
