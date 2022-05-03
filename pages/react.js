@@ -49,6 +49,17 @@ export default function ReactPage() {
         fetchState()
     }, [data]);
 
+    /* SetTimeOut para renderizar IG Móvil */
+    const [isDisplayed, setIsDisplayed] = useState(false);
+
+    useEffect(() => {
+        setInterval(() => {
+            setIsDisplayed(true);
+        }, 1500);
+    }, []);
+
+
+
     const handleBtns = (e) => {
         let word = e.target.value;
 
@@ -119,40 +130,48 @@ export default function ReactPage() {
                 <button id="loadMore" onClick={showMoreItems}>Leer más</button>
                 <h2 className="font-MontserratBold text-3xl text-center text-spacecadet mt-16 mb-8">Top Cuentas IG</h2>
                 <MediaQuery minWidth={768} >
-                <div className="instagramPostsContainer mb-4">
-                    <i className="pi pi-chevron-left" onClick={showLessPosts} style={{ margin: `auto 0`, background: `#2B193D`, borderRadius: `50%`, color: `#fff`, padding: `0.5rem`, cursor: `pointer` }}></i>
-                    {morePosts === 3 &&
-                        <InstagramEmbed url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />
-                    }
-                    {morePosts === 3 &&
-                        <InstagramEmbed url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />
-                    }
-                    {morePosts === 3 &&
-                        <InstagramEmbed url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />
-                    }
-                    {morePosts === 6 &&
-                        <InstagramEmbed url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />
-                    }
-                    {morePosts === 6 &&
-                        <InstagramEmbed url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />
-                    }
-                    {morePosts === 6 &&
-                        <InstagramEmbed url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />
-                    }
-                    <i className="pi pi-chevron-right" onClick={showMorePosts} style={{ margin: `auto 0`, background: `#2B193D`, borderRadius: `50%`, color: `#fff`, padding: `0.5rem`, cursor: `pointer` }}></i>
-                </div>
-                </MediaQuery>
-                <MediaQuery maxWidth={767} >
-                    <div className="instagramPostsContainerResponsive mb-4">
-                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />
-                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />
-                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />
-                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />
-                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />
-                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />
+                    <div className="instagramPostsContainer mb-4">
+                        <i className="pi pi-chevron-left" onClick={showLessPosts} style={{ margin: `auto 0`, background: `#2B193D`, borderRadius: `50%`, color: `#fff`, padding: `0.5rem`, cursor: `pointer` }}></i>
+                        {morePosts === 3 &&
+                            <InstagramEmbed url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />
+                        }
+                        {morePosts === 3 &&
+                            <InstagramEmbed url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />
+                        }
+                        {morePosts === 3 &&
+                            <InstagramEmbed url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />
+                        }
+                        {morePosts === 6 &&
+                            <InstagramEmbed url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />
+                        }
+                        {morePosts === 6 &&
+                            <InstagramEmbed url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />
+                        }
+                        {morePosts === 6 &&
+                            <InstagramEmbed url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />
+                        }
+                        <i className="pi pi-chevron-right" onClick={showMorePosts} style={{ margin: `auto 0`, background: `#2B193D`, borderRadius: `50%`, color: `#fff`, padding: `0.5rem`, cursor: `pointer` }}></i>
                     </div>
                 </MediaQuery>
 
+                <MediaQuery maxWidth={767} >
+                    <div style={{ position: `relative`, height: `650px` }}>
+                        <div div className="instagramPostsContainerResponsive mb-4">
+                            {isDisplayed &&
+                                <InstagramEmbed  url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />}
+                            {isDisplayed &&
+                                <InstagramEmbed  url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />}
+                            {isDisplayed &&
+                                <InstagramEmbed  url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />}
+                            {isDisplayed &&
+                                <InstagramEmbed  url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />}
+                            {isDisplayed &&
+                                <InstagramEmbed  url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />}
+                            {isDisplayed &&
+                                <InstagramEmbed  url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />}
+                        </div>
+                    </div>
+                </MediaQuery>
                 <Footer />
             </Container >
         </>

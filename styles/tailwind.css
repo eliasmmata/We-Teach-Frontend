@@ -110,21 +110,18 @@ a:hover {
   .instagramPostsContainerResponsive {
     margin: 0em 1em;
     width: 95vw;
+    min-height: 650px !important;
+    position: absolute;
     display: flex;
     overflow: scroll;
       & .rsme-embed {
         flex-shrink: 0;
         margin-right: 15px;
       }
-      & .embed {
-        display: flex !important;
-        width: 328px;
-        height: 620px;
-      }
       & ._9AhH0 {
         touch-action: none;
       }
-    }
+  }
 }
 @media only screen and (min-width: 768px) {
   .instagramPostsContainerResponsive {
