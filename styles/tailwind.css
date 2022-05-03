@@ -115,6 +115,13 @@ a:hover {
       & .rsme-embed {
         flex-shrink: 0;
         margin-right: 15px;
+      }
+      & .embed {
+        display: flex !important;
+        width: 328px;
+        height: 620px;
+      }
+      & ._9AhH0 {
         touch-action: none;
       }
     }
