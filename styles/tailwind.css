@@ -94,6 +94,7 @@ a:hover {
   ) !important;
 }
 
+/* INSTAGRAM DISPLAY ALL SCREENS */
 .instagramPostsContainer {
   display: flex;
   width: 88%;
@@ -119,6 +120,9 @@ a:hover {
         margin-right: 15px;
       }
       & ._9AhH0 {
+        touch-action: none;
+      }
+      & .EmbedSidecar {
         touch-action: none;
       }
   }
