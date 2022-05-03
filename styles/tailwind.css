@@ -29,6 +29,11 @@
     font-weight: 600;
   }
 }
+
+body {
+  width: 100% !
+}
+
 ul {
     margin: 0px;
     padding: 0px !important;
@@ -110,6 +115,7 @@ a:hover {
       & .rsme-embed {
         flex-shrink: 0;
         margin-right: 15px;
+        touch-action: none;
       }
     }
 }
@@ -119,4 +125,3 @@ a:hover {
       visibility: hidden;
   }
 }
-

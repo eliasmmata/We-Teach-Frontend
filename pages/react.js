@@ -144,24 +144,12 @@ export default function ReactPage() {
                 </MediaQuery>
                 <MediaQuery maxWidth={767} >
                     <div className="instagramPostsContainerResponsive mb-4">
-                        <div style={{ flexShrink: `0` }}>
-                            <InstagramEmbed url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />
-                        </div>
-                        <div>
-                            <InstagramEmbed url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />
-                        </div>
-                        <div>
-                            <InstagramEmbed url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />
-                        </div>
-                        <div>
-                            <InstagramEmbed url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />
-                        </div>
-                        <div>
-                            <InstagramEmbed url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />
-                        </div>
-                        <div>
-                            <InstagramEmbed url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />
-                        </div>
+                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CYtdUb2lqpU/" width={328} height={620} />
+                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CagbzqRFtnA/" width={328} height={620} />
+                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CYxtmqil_Mj/" width={328} height={620} />
+                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CYnJP3vjQz5/" width={328} height={620} />
+                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CY4CwnQA7HS/" width={328} height={620} />
+                            <InstagramEmbed retryDisabled={false} url="https://www.instagram.com/p/CYoOBN8KO8B/" width={328} height={620} />
                     </div>
                 </MediaQuery>
 
