@@ -8,6 +8,10 @@ import { Instagram } from "../components/Instagram";
 
 import Script from 'next/script';
 
+import dynamic from 'next/dynamic'
+
+const AblyChatComponent = dynamic(() => import('../components/AblyChatComponent'), { ssr: false });
+
 export default function Home() {
   const { data: session, status } = useSession();
   console.log(status)
@@ -30,6 +34,7 @@ export default function Home() {
         <Script src="/scripts/instafeed.min.js"></Script>
         <LoginOk />
         <Instagram />
+        <AblyChatComponent />
         <Footer />
       </Container>
     </>
