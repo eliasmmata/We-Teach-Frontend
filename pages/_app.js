@@ -14,8 +14,6 @@ import '../styles/qube.min.css';
 import 'animate.css';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-
 export default function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter()
 

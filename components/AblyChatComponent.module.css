@@ -1,0 +1,85 @@
+.chatHolder {
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    position: absolute;
+    z-index: 999;
+    background: white;
+    right: 15px;
+    height: 400px;
+    margin-top: -460px;
+    animation: 0.5s chatAnimation;
+    font-family: Montserrat, mono-sans;
+    border-radius: 4px 4px 0 0;
+    min-width: 300px;
+    & .title {
+        padding: 1rem;
+        height: fit-content;
+        font-family: MontserratBold, mono-sans;
+        text-align: center;
+        background: #2B193D;
+        color: #F8F2F3;
+        border-radius: 3px 3px 0 0;
+    }
+    & .chatText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 1em;
+        /* height: calc(100vh - 40px - 100px - 100px - 100px); */
+        height: calc(100vh - 40px - 100px - 100px - 168px);
+        margin-top: -194px;
+        border: 1px solid #2B193D;
+        overflow-y: auto;
+    }
+    & .form {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        height: 50px;
+        & .textarea {
+            /* padding: 1em;
+            font-size: 1.2em; */
+            border: none;
+            line-height: 2rem;
+            &:focus {
+                outline: none !important;
+                outline-offset: 0px !important;
+                --tw-ring-color: white;
+            }
+        }
+        & .button {
+            border: 0;
+            color: white;
+            font-size: 1rem;
+            background: linear-gradient(to right, #363795, #005C97);
+            &:hover {
+                background: linear-gradient(90deg, rgba(54,55,149,1) 0%, rgba(0,92,151,1) 62%, rgba(0,125,205,1) 100%);
+            }
+        }
+    }
+}
+.button:disabled,
+.button:hover:disabled {
+    background: linear-gradient(to right, #363795, #005C97);
+    opacity: 0.5;
+}
+
+.message {
+    background-color: #eef5f8;
+    padding: 1em;
+    border-radius: 10px;
+    flex-grow: 0;
+    border-bottom-left-radius: 0;
+}
+
+@keyframes chatAnimation {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+

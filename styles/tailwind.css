@@ -94,6 +94,38 @@ a:hover {
   ) !important;
 }
 
+/* BUTTON CHAT */
+.button-chat-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -10vh;
+  margin-right: 20px;
+  padding-bottom: 5vh !important;
+  border-radius: 50%;
+  float: right;
+  height: 60px;
+  width: 60px;
+  background: #4B8F8C;
+  & i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 60px;
+    height: 60px;
+    color:  #F8F2F3;
+  }
+}
+.chat-container {
+  & #close-chat {
+    cursor: pointer;
+    z-index: 9999;
+    & i {
+      font-size: 1.4rem;
+    }
+  }
+}
+
 /* INSTAGRAM DISPLAY ALL SCREENS */
 .instagramPostsContainer {
   display: flex;
