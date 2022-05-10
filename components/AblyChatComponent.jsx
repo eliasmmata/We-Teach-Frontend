@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useChannel } from "./AblyReactEffect";
 import styles from './AblyChatComponent.module.css';
+import { useSession } from 'next-auth/react';
 
 const AblyChatComponent = ({ chatAnimation }) => {
+
+    const { data: session, status } = useSession();
 
     let inputBox = null;
     let messageEnd = null;
@@ -46,7 +49,7 @@ const AblyChatComponent = ({ chatAnimation }) => {
 
     return (
         <div key={chatAnimation} className={styles.chatHolder}>
-            <p className={styles.title}>Chatea</p>
+            <p className={styles.title}>Chat WTF <span style={{display:`block`, fontSize:`0.75rem`}}>{session.user.email}</span></p>
             <div className={styles.chatText}>
                 {messages}
                 <div ref={(element) => { messageEnd = element; }}></div>
@@ -55,13 +58,13 @@ const AblyChatComponent = ({ chatAnimation }) => {
                 <textarea
                     ref={(element) => { inputBox = element; }}
                     value={messageText}
-                    placeholder="Type a message..."
+                    placeholder="Escribe tu mensaje..."
                     onChange={e => setMessageText(e.target.value)}
                     onKeyPress={handleKeyPress}
                     className={styles.textarea}
                 ></textarea>
                 <button type="submit" className={styles.button} disabled={messageTextIsEmpty}>
-                    <i className="pi pi-send"></i>
+                    <i className="pi pi-telegram"></i>
                 </button>
             </form>
         </div>

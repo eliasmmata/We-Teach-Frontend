@@ -89,7 +89,9 @@
         }
     }
 }
-#instafeed-container > div:nth-child(3) {
+
+/* OCULTAR LOS POSTS DE INSTAGRAM QUE YO QUIERA */
+#instafeed-container > div:nth-child(5) {
     display: none;
 }
 

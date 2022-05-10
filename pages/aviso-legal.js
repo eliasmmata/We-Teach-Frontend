@@ -18,7 +18,7 @@ export default function AvisoLegal() {
                         </h6>
 
                         <p className="mb-8 text-center text-independance md:text-lg">
-                            The page you are looking for does not exist.
+                            Work in progress
                         </p>
                         <div style={{display:`flex`, justifyContent: "space-around", width:`100%`}}>
                             <Link href="/" className="px-6 py-2 text-sm font-semibold text-spacecadet bg-spacecadet">
