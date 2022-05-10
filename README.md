@@ -5,9 +5,11 @@ Ve a [https://www.weteachfrontend.com/](https://www.weteachfrontend.com/) y reg�
 
 ## Qué tiene
 
-Login con NextAuth con usuario (a través de MongoDB), Google o Github.
+Login con NextAuth con usuario (a través de BBDD MongoDB), Google o Github.
 
 Llamada a la api de Instagram para insertar los posts (package instafeed.js).
+
+Display de Post de Instagram de otros usuarios a través de librería React-Social-Media-Embed.
 
 Fetch de recursos a través de las librerías AXIOS y SWR.
 
@@ -22,6 +24,8 @@ Estilos con TailwindCss.
 Google Analytics Y Google Tag Manager.
 
 Estilos condicionales dependiendo del valor del dato.
+
+Chat Realtime powered by Ably API.
 
 Set Up pruebas y manejo de errores (Jest, React Testing Library)
 ## Getting Started

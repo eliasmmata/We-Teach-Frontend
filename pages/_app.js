@@ -35,7 +35,7 @@ export default function MyApp({ Component, pageProps: { session, ...pageProps } 
     <>
       <Head>
         <title>We Teach Frontend</title>
-        <meta name="description" content="WTF Developed by eliasmmata, powered by NextJS" />
+        <meta name="description" content="Aprende React, JavaScript, Css y todo tipo de estilos. Desarrollo frontend a todos los niveles. Únete a la comunidad" />
         <link rel="icon" href="/images/favicon.png" />
       </Head>
       <SessionProvider session={session}>
