@@ -11,7 +11,7 @@ Llamada a la api de Instagram para insertar los posts (package instafeed.js).
 
 Display de Post de Instagram de otros usuarios a través de librería React-Social-Media-Embed.
 
-Fetch de recursos a través de las librerías AXIOS y SWR.
+Fetch de recursos a través de las librerías AXIOS y SWR (React Hooks library for data fetching. SWR first returns the data from cache (stale), then sends the fetch request (revalidate))
 
 Filtros dependiendo del nivel del usuario.
 

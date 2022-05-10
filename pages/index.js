@@ -10,8 +10,6 @@ import Script from 'next/script';
 
 import dynamic from 'next/dynamic'
 import { useState } from "react";
-import { userInfo } from "os";
-import Head from "next/head";
 
 
 const AblyChatComponent = dynamic(() => import('../components/AblyChatComponent'), { ssr: false });
@@ -19,11 +17,10 @@ const AblyChatComponent = dynamic(() => import('../components/AblyChatComponent'
 
 export default function Home() {
   const { data: session, status } = useSession();
-  console.log(status)
-  console.log(session)
+  /* console.log(status)
+  console.log(session) */
 
   const [state, setState] = useState('chat-closed')
-
 
   if (!session) {
     return (

@@ -19,6 +19,7 @@ import MediaQuery from "react-responsive";
 
 export default function ReactPage() {
 
+
     const fetcher = async url => await axios.get(url).then(res => res.data);
     const { data, error } = useSWR('api/resources-react', fetcher);
     const [state, setState] = useState([]);
