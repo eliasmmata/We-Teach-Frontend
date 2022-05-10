@@ -20,7 +20,7 @@ const AblyChatComponent = ({ chatAnimation }) => {
     });
 
     const sendChatMessage = (messageText) => {
-        channel.publish({ name: "chat-message", data: messageText });
+        channel.publish({ name: "weteachfrontend", data: messageText });
         setMessageText("");
         inputBox.focus();
     }
