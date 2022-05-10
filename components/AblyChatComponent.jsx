@@ -14,7 +14,7 @@ const AblyChatComponent = ({ chatAnimation }) => {
     const [receivedMessages, setMessages] = useState([]);
     const messageTextIsEmpty = messageText.trim().length === 0;
 
-    const [channel, ably] = useChannel("chat-demo", (message) => {
+    const [channel, ably] = useChannel("weteachfrontend", (message) => {
         const history = receivedMessages.slice(-199);
         setMessages([...history, message]);
     });
@@ -39,8 +39,12 @@ const AblyChatComponent = ({ chatAnimation }) => {
     }
 
     const messages = receivedMessages.map((message, index) => {
+        let dateTimeNow = new Date().toString().slice(0, 21);
+
         const author = message.connectionId === ably.connection.id ? "me" : "other";
-        return <span key={index} className={styles.message} data-author={author}>{message.data}</span>;
+        return <span key={index} className={styles.message} data-author={author}>{message.data}
+            <span style={{ display: `block`, fontSize: `0.5rem` }}>Sent by {session.user.email} {dateTimeNow}</span>
+        </span>;
     });
 
     useEffect(() => {
@@ -49,7 +53,7 @@ const AblyChatComponent = ({ chatAnimation }) => {
 
     return (
         <div key={chatAnimation} className={styles.chatHolder}>
-            <p className={styles.title}>Chat WTF <span style={{display:`block`, fontSize:`0.75rem`}}>{session.user.email}</span></p>
+            <p className={styles.title}>Chat WTF <span style={{ display: `block`, fontSize: `0.75rem` }}>{session.user.email}</span></p>
             <div className={styles.chatText}>
                 {messages}
                 <div ref={(element) => { messageEnd = element; }}></div>
