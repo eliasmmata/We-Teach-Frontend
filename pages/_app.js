@@ -14,7 +14,9 @@ import '../styles/qube.min.css';
 import 'animate.css';
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function MyApp({ Component, pageProps: { session, ...pageProps } }) {
+import { wrapper } from '../redux/store';
+
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const router = useRouter()
 
   useEffect(() => {
@@ -44,3 +46,5 @@ export default function MyApp({ Component, pageProps: { session, ...pageProps } 
     </>
   );
 }
+
+export default wrapper.withRedux(MyApp)

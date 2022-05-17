@@ -1,3 +1,5 @@
+/* Token para el chat powered by Ably  */
+
 import Ably from "ably/promises";
 
 export default async function handler(req, res) {

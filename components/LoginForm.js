@@ -6,6 +6,7 @@ import Image from "next/image";
 import Typewriter from 'typewriter-effect';
 
 import { ToastContainer, toast } from 'react-toastify';
+import Link from 'next/link';
 
 export default function LoginForm({ csrfToken }) {
     const { data: session } = useSession()
@@ -118,8 +119,8 @@ export default function LoginForm({ csrfToken }) {
                                 <label htmlFor="remember-me" className="ml-2 block text-sm text-darkpurple"> Recuérdame </label>
                             </div>
 
-                            <div className="text-sm">
-                                <a href="#" className="font-medium text-600 hover:text-500" style={{ color: `#C5979D` }}> ¿Olvidaste tu contraseña? </a>
+                            <div className="text-sm font-medium text-600 hover:text-500" style={{ color: `#C5979D` }}>
+                                <Link id="forgot-password" href="/user/change-password"> ¿Olvidaste tu contraseña? </Link>
                             </div>
                         </div>
                         <div>
